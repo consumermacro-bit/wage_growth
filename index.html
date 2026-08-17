@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DCPI Monthly Update Dashboard - 2026-06</title>
+  <style>
+    :root {
+      --bg: #f6f7f9;
+      --panel: #ffffff;
+      --ink: #17202a;
+      --muted: #617083;
+      --line: #d9dee7;
+      --soft: #eef2f6;
+      --blue: #2f6fbd;
+      --green: #21855f;
+      --red: #b44747;
+      --gold: #9c6b18;
+      --radius: 8px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.35;
+    }
+    header {
+      background: #182433;
+      color: #fff;
+      padding: 22px 28px;
+    }
+    header h1 {
+      margin: 0 0 6px;
+      font-size: 26px;
+      letter-spacing: 0;
+    }
+    header p { margin: 0; color: #c8d2df; font-size: 14px; }
+    main { max-width: 1280px; margin: 0 auto; padding: 22px; }
+    section { margin-bottom: 18px; }
+    h2 { font-size: 18px; margin: 0 0 10px; }
+    .grid { display: grid; gap: 12px; }
+    .cards { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+    .two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .card, .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 14px;
+      box-shadow: 0 1px 1px rgba(20, 32, 45, 0.04);
+    }
+    .card .label { color: var(--muted); font-size: 12px; margin-bottom: 6px; }
+    .card .value { font-size: 24px; font-weight: 700; }
+    .card .note { margin-top: 5px; font-size: 12px; color: var(--muted); }
+    .good { color: var(--green); }
+    .bad { color: var(--red); }
+    .neutral { color: var(--muted); }
+    .chart { min-height: 320px; }
+    svg { width: 100%; height: 320px; display: block; }
+    .legend { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; font-size: 12px; color: var(--muted); }
+    .swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th, td { border-bottom: 1px solid var(--line); padding: 8px 7px; text-align: right; }
+    th:first-child, td:first-child { text-align: left; }
+    th { color: var(--muted); font-weight: 600; background: #fafbfc; }
+    .small { font-size: 12px; color: var(--muted); }
+    .source-list { margin: 0; padding-left: 18px; color: var(--muted); font-size: 12px; }
+    .pill {
+      display: inline-block;
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 3px 8px;
+      color: var(--muted);
+      font-size: 12px;
+      margin-right: 6px;
+    }
+    @media (max-width: 980px) {
+      .cards, .two { grid-template-columns: 1fr; }
+      main { padding: 14px; }
+      header { padding: 18px; }
+      header h1 { font-size: 22px; }
+      .card .value { font-size: 21px; }
+      table { font-size: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DCPI Monthly Update Dashboard</h1>
+    <p>Snapshot for 2026-06; generated 2026-08-12 13:34 UTC from local project outputs.</p>
+  </header>
+  <main>
+    <section class="grid cards" id="cards"></section>
+    <section class="grid two">
+      <div class="panel">
+        <h2>DCPI 12-Month Inflation by Income Quintile</h2>
+        <div id="dcpiChart" class="chart"></div>
+        <div id="dcpiLegend" class="legend"></div>
+      </div>
+      <div class="panel">
+        <h2>Real Wage Nowcast by Wage Quartile</h2>
+        <div id="realChart" class="chart"></div>
+        <div id="realLegend" class="legend"></div>
+      </div>
+    </section>
+    <section class="grid two">
+      <div class="panel">
+        <h2>Latest DCPI Readout</h2>
+        <div id="dcpiTable"></div>
+      </div>
+      <div class="panel">
+        <h2>Latest Real Wage Nowcast</h2>
+        <div id="nowcastTable"></div>
+      </div>
+    </section>
+    <section class="grid two">
+      <div class="panel">
+        <h2>Mapped Wage Growth Components</h2>
+        <div id="componentChart" class="chart"></div>
+        <p class="small">Real wage growth is computed as (1 + nominal wage growth) / (1 + mapped DCPI inflation) - 1.</p>
+      </div>
+      <div class="panel">
+        <h2>Largest Category Drivers of 12-Month DCPI</h2>
+        <div id="driversChart" class="chart"></div>
+      </div>
+    </section>
+    <section class="panel">
+      <h2>Source and Method Notes</h2>
+      <p class="small">
+        This is a static snapshot. DCPI uses fixed 2024 CEX income-quintile baskets and the project's current
+        filtered CE-source output. WGT wage quartiles are mapped to DCPI quintiles with the overlap mapping
+        saved in the project nowcast output.
+      </p>
+      <p>
+        <span class="pill">CPI price month: 2026-06</span>
+        <span class="pill">DCPI month: 2026-06</span>
+        <span class="pill">WGT/nowcast month: 2026-06</span>
+        <span class="pill">Crosswalk: master_ucc_eli_cpi_xwalk_recreated_v2.xlsx</span>
+      </p>
+      <ul class="source-list" id="sources"></ul>
+    </section>
+  </main>
+  <script id="snapshot" type="application/json">{"generated_at":"2026-08-12T13:34:50.591653+00:00","latest":{"price_month":"2026-06-01","price_rows":205,"dcpi_month":"2026-06-01","nowcast_month":"2026-06-01","avg_dcpi_12mo_pct":3.92,"spread_dcpi_12mo_pct_points":0.473,"avg_real_wage_pct":-0.068,"best_real_wage_quartile":"WQ4","worst_real_wage_quartile":"WQ1","xwalk_name":"master_ucc_eli_cpi_xwalk_recreated_v2.xlsx"},"dcpi_latest":[{"income_quintile":"Q1","dcpi_index":246.3503,"dcpi_monthly_change_pct":-0.1293,"dcpi_12mo_change_pct":3.8968,"mom_change_in_12mo_pct_points":-0.6911},{"income_quintile":"Q2","dcpi_index":243.5412,"dcpi_monthly_change_pct":-0.215,"dcpi_12mo_change_pct":4.0841,"mom_change_in_12mo_pct_points":-0.7468},{"income_quintile":"Q3","dcpi_index":247.4324,"dcpi_monthly_change_pct":-0.2392,"dcpi_12mo_change_pct":4.0743,"mom_change_in_12mo_pct_points":-0.7584},{"income_quintile":"Q4","dcpi_index":254.6104,"dcpi_monthly_change_pct":-0.2373,"dcpi_12mo_change_pct":3.9363,"mom_change_in_12mo_pct_points":-0.6869},{"income_quintile":"Q5","dcpi_index":269.8549,"dcpi_monthly_change_pct":-0.1393,"dcpi_12mo_change_pct":3.6108,"mom_change_in_12mo_pct_points":-0.5221}],"nowcast_latest":[{"wage_quartile":"WQ1","nominal_wage_growth_12mo_pct":3.6,"mapped_dcpi_inflation_12mo_pct":3.9342,"real_wage_growth_12mo_pct":-0.3216,"mom_change_in_real_wage_pct_points":0.7645},{"wage_quartile":"WQ2","nominal_wage_growth_12mo_pct":4.0,"mapped_dcpi_inflation_12mo_pct":4.0802,"real_wage_growth_12mo_pct":-0.077,"mom_change_in_real_wage_pct_points":0.7163},{"wage_quartile":"WQ3","nominal_wage_growth_12mo_pct":3.9,"mapped_dcpi_inflation_12mo_pct":3.9915,"real_wage_growth_12mo_pct":-0.088,"mom_change_in_real_wage_pct_points":0.5873},{"wage_quartile":"WQ4","nominal_wage_growth_12mo_pct":3.9,"mapped_dcpi_inflation_12mo_pct":3.6759,"real_wage_growth_12mo_pct":0.2162,"mom_change_in_real_wage_pct_points":0.6296}],"dcpi_recent":[{"date":"2025-01-01","income_quintile":"Q1","dcpi_index":233.0576,"dcpi_12mo_change_pct":2.9118},{"date":"2025-02-01","income_quintile":"Q1","dcpi_index":233.876,"dcpi_12mo_change_pct":2.8112},{"date":"2025-03-01","income_quintile":"Q1","dcpi_index":234.5922,"dcpi_12mo_change_pct":2.5273},{"date":"2025-04-01","income_quintile":"Q1","dcpi_index":235.135,"dcpi_12mo_change_pct":2.4767},{"date":"2025-05-01","income_quintile":"Q1","dcpi_index":235.849,"dcpi_12mo_change_pct":2.5871},{"date":"2025-06-01","income_quintile":"Q1","dcpi_index":237.1106,"dcpi_12mo_change_pct":2.9605},{"date":"2025-07-01","income_quintile":"Q1","dcpi_index":237.6198,"dcpi_12mo_change_pct":2.8479},{"date":"2025-08-01","income_quintile":"Q1","dcpi_index":238.2969,"dcpi_12mo_change_pct":3.0768},{"date":"2025-09-01","income_quintile":"Q1","dcpi_index":238.8658,"dcpi_12mo_change_pct":3.1393},{"date":"2025-10-01","income_quintile":"Q1","dcpi_index":238.691,"dcpi_12mo_change_pct":2.9696},{"date":"2025-11-01","income_quintile":"Q1","dcpi_index":238.4967,"dcpi_12mo_change_pct":3.0217},{"date":"2025-12-01","income_quintile":"Q1","dcpi_index":238.8376,"dcpi_12mo_change_pct":3.078},{"date":"2026-01-01","income_quintile":"Q1","dcpi_index":239.9945,"dcpi_12mo_change_pct":2.9764},{"date":"2026-02-01","income_quintile":"Q1","dcpi_index":240.8984,"dcpi_12mo_change_pct":3.0026},{"date":"2026-03-01","income_quintile":"Q1","dcpi_index":243.0207,"dcpi_12mo_change_pct":3.5928},{"date":"2026-04-01","income_quintile":"Q1","dcpi_index":245.1456,"dcpi_12mo_change_pct":4.2574},{"date":"2026-05-01","income_quintile":"Q1","dcpi_index":246.6693,"dcpi_12mo_change_pct":4.5878},{"date":"2026-06-01","income_quintile":"Q1","dcpi_index":246.3503,"dcpi_12mo_change_pct":3.8968},{"date":"2025-01-01","income_quintile":"Q2","dcpi_index":229.9958,"dcpi_12mo_change_pct":2.9828},{"date":"2025-02-01","income_quintile":"Q2","dcpi_index":230.8425,"dcpi_12mo_change_pct":2.8535},{"date":"2025-03-01","income_quintile":"Q2","dcpi_index":231.5008,"dcpi_12mo_change_pct":2.5218},{"date":"2025-04-01","income_quintile":"Q2","dcpi_index":232.1148,"dcpi_12mo_change_pct":2.4442},{"date":"2025-05-01","income_quintile":"Q2","dcpi_index":232.8188,"dcpi_12mo_change_pct":2.5286},{"date":"2025-06-01","income_quintile":"Q2","dcpi_index":233.985,"dcpi_12mo_change_pct":2.924},{"date":"2025-07-01","income_quintile":"Q2","dcpi_index":234.5284,"dcpi_12mo_change_pct":2.8584},{"date":"2025-08-01","income_quintile":"Q2","dcpi_index":235.1819,"dcpi_12mo_change_pct":3.1129},{"date":"2025-09-01","income_quintile":"Q2","dcpi_index":235.7189,"dcpi_12mo_change_pct":3.2384},{"date":"2025-10-01","income_quintile":"Q2","dcpi_index":235.5041,"dcpi_12mo_change_pct":3.0311},{"date":"2025-11-01","income_quintile":"Q2","dcpi_index":235.365,"dcpi_12mo_change_pct":3.0614},{"date":"2025-12-01","income_quintile":"Q2","dcpi_index":235.6911,"dcpi_12mo_change_pct":3.108},{"date":"2026-01-01","income_quintile":"Q2","dcpi_index":236.6347,"dcpi_12mo_change_pct":2.8865},{"date":"2026-02-01","income_quintile":"Q2","dcpi_index":237.6422,"dcpi_12mo_change_pct":2.9456},{"date":"2026-03-01","income_quintile":"Q2","dcpi_index":240.0759,"dcpi_12mo_change_pct":3.7041},{"date":"2026-04-01","income_quintile":"Q2","dcpi_index":242.3403,"dcpi_12mo_change_pct":4.4054},{"date":"2026-05-01","income_quintile":"Q2","dcpi_index":244.066,"dcpi_12mo_change_pct":4.8309},{"date":"2026-06-01","income_quintile":"Q2","dcpi_index":243.5412,"dcpi_12mo_change_pct":4.0841},{"date":"2025-01-01","income_quintile":"Q3","dcpi_index":233.7055,"dcpi_12mo_change_pct":2.942},{"date":"2025-02-01","income_quintile":"Q3","dcpi_index":234.5367,"dcpi_12mo_change_pct":2.8042},{"date":"2025-03-01","income_quintile":"Q3","dcpi_index":235.2346,"dcpi_12mo_change_pct":2.4381},{"date":"2025-04-01","income_quintile":"Q3","dcpi_index":235.8844,"dcpi_12mo_change_pct":2.3568},{"date":"2025-05-01","income_quintile":"Q3","dcpi_index":236.5919,"dcpi_12mo_change_pct":2.4505},{"date":"2025-06-01","income_quintile":"Q3","dcpi_index":237.746,"dcpi_12mo_change_pct":2.8502},{"date":"2025-07-01","income_quintile":"Q3","dcpi_index":238.2839,"dcpi_12mo_change_pct":2.7753},{"date":"2025-08-01","income_quintile":"Q3","dcpi_index":238.9563,"dcpi_12mo_change_pct":3.0293},{"date":"2025-09-01","income_quintile":"Q3","dcpi_index":239.487,"dcpi_12mo_change_pct":3.1586},{"date":"2025-10-01","income_quintile":"Q3","dcpi_index":239.2657,"dcpi_12mo_change_pct":2.9548},{"date":"2025-11-01","income_quintile":"Q3","dcpi_index":239.0583,"dcpi_12mo_change_pct":2.9663},{"date":"2025-12-01","income_quintile":"Q3","dcpi_index":239.3091,"dcpi_12mo_change_pct":2.9958},{"date":"2026-01-01","income_quintile":"Q3","dcpi_index":240.2903,"dcpi_12mo_change_pct":2.8176},{"date":"2026-02-01","income_quintile":"Q3","dcpi_index":241.3255,"dcpi_12mo_change_pct":2.8946},{"date":"2026-03-01","income_quintile":"Q3","dcpi_index":243.9171,"dcpi_12mo_change_pct":3.691},{"date":"2026-04-01","income_quintile":"Q3","dcpi_index":246.2258,"dcpi_12mo_change_pct":4.3841},{"date":"2026-05-01","income_quintile":"Q3","dcpi_index":248.0257,"dcpi_12mo_change_pct":4.8327},{"date":"2026-06-01","income_quintile":"Q3","dcpi_index":247.4324,"dcpi_12mo_change_pct":4.0743},{"date":"2025-01-01","income_quintile":"Q4","dcpi_index":241.054,"dcpi_12mo_change_pct":3.0233},{"date":"2025-02-01","income_quintile":"Q4","dcpi_index":241.9148,"dcpi_12mo_change_pct":2.8782},{"date":"2025-03-01","income_quintile":"Q4","dcpi_index":242.581,"dcpi_12mo_change_pct":2.4597},{"date":"2025-04-01","income_quintile":"Q4","dcpi_index":243.2497,"dcpi_12mo_change_pct":2.3789},{"date":"2025-05-01","income_quintile":"Q4","dcpi_index":243.9382,"dcpi_12mo_change_pct":2.4474},{"date":"2025-06-01","income_quintile":"Q4","dcpi_index":244.9676,"dcpi_12mo_change_pct":2.7972},{"date":"2025-07-01","income_quintile":"Q4","dcpi_index":245.4934,"dcpi_12mo_change_pct":2.6445},{"date":"2025-08-01","income_quintile":"Q4","dcpi_index":246.1754,"dcpi_12mo_change_pct":2.8897},{"date":"2025-09-01","income_quintile":"Q4","dcpi_index":246.7276,"dcpi_12mo_change_pct":3.0245},{"date":"2025-10-01","income_quintile":"Q4","dcpi_index":246.5184,"dcpi_12mo_change_pct":2.8271},{"date":"2025-11-01","income_quintile":"Q4","dcpi_index":246.2183,"dcpi_12mo_change_pct":2.7762},{"date":"2025-12-01","income_quintile":"Q4","dcpi_index":246.5225,"dcpi_12mo_change_pct":2.8457},{"date":"2026-01-01","income_quintile":"Q4","dcpi_index":247.4729,"dcpi_12mo_change_pct":2.6628},{"date":"2026-02-01","income_quintile":"Q4","dcpi_index":248.5748,"dcpi_12mo_change_pct":2.753},{"date":"2026-03-01","income_quintile":"Q4","dcpi_index":251.1434,"dcpi_12mo_change_pct":3.5297},{"date":"2026-04-01","income_quintile":"Q4","dcpi_index":253.4248,"dcpi_12mo_change_pct":4.183},{"date":"2026-05-01","income_quintile":"Q4","dcpi_index":255.2161,"dcpi_12mo_change_pct":4.6233},{"date":"2026-06-01","income_quintile":"Q4","dcpi_index":254.6104,"dcpi_12mo_change_pct":3.9363},{"date":"2025-01-01","income_quintile":"Q5","dcpi_index":256.6374,"dcpi_12mo_change_pct":3.1144},{"date":"2025-02-01","income_quintile":"Q5","dcpi_index":257.5015,"dcpi_12mo_change_pct":2.9724},{"date":"2025-03-01","income_quintile":"Q5","dcpi_index":258.1703,"dcpi_12mo_change_pct":2.5712},{"date":"2025-04-01","income_quintile":"Q5","dcpi_index":258.8002,"dcpi_12mo_change_pct":2.5071},{"date":"2025-05-01","income_quintile":"Q5","dcpi_index":259.5064,"dcpi_12mo_change_pct":2.5544},{"date":"2025-06-01","income_quintile":"Q5","dcpi_index":260.4507,"dcpi_12mo_change_pct":2.8349},{"date":"2025-07-01","income_quintile":"Q5","dcpi_index":261.0046,"dcpi_12mo_change_pct":2.6387},{"date":"2025-08-01","income_quintile":"Q5","dcpi_index":261.7915,"dcpi_12mo_change_pct":2.8355},{"date":"2025-09-01","income_quintile":"Q5","dcpi_index":262.407,"dcpi_12mo_change_pct":2.9079},{"date":"2025-10-01","income_quintile":"Q5","dcpi_index":262.2505,"dcpi_12mo_change_pct":2.7109},{"date":"2025-11-01","income_quintile":"Q5","dcpi_index":261.8531,"dcpi_12mo_change_pct":2.5875},{"date":"2025-12-01","income_quintile":"Q5","dcpi_index":262.2656,"dcpi_12mo_change_pct":2.7046},{"date":"2026-01-01","income_quintile":"Q5","dcpi_index":263.2446,"dcpi_12mo_change_pct":2.5746},{"date":"2026-02-01","income_quintile":"Q5","dcpi_index":264.3769,"dcpi_12mo_change_pct":2.6701},{"date":"2026-03-01","income_quintile":"Q5","dcpi_index":266.5762,"dcpi_12mo_change_pct":3.2559},{"date":"2026-04-01","income_quintile":"Q5","dcpi_index":268.6198,"dcpi_12mo_change_pct":3.7943},{"date":"2026-05-01","income_quintile":"Q5","dcpi_index":270.2315,"dcpi_12mo_change_pct":4.1329},{"date":"2026-06-01","income_quintile":"Q5","dcpi_index":269.8549,"dcpi_12mo_change_pct":3.6108}],"nowcast_recent":[{"date":"2025-01-01","wage_quartile":"WQ1","nominal_wage_growth_12mo_pct":4.2,"mapped_dcpi_inflation_12mo_pct":2.926,"real_wage_growth_12mo_pct":1.2378},{"date":"2025-01-01","wage_quartile":"WQ2","nominal_wage_growth_12mo_pct":4.7,"mapped_dcpi_inflation_12mo_pct":2.9665,"real_wage_growth_12mo_pct":1.6836},{"date":"2025-01-01","wage_quartile":"WQ3","nominal_wage_growth_12mo_pct":4.7,"mapped_dcpi_inflation_12mo_pct":2.9908,"real_wage_growth_12mo_pct":1.6596},{"date":"2025-01-01","wage_quartile":"WQ4","nominal_wage_growth_12mo_pct":4.9,"mapped_dcpi_inflation_12mo_pct":3.0962,"real_wage_growth_12mo_pct":1.7497},{"date":"2025-02-01","wage_quartile":"WQ1","nominal_wage_growth_12mo_pct":4.2,"mapped_dcpi_inflation_12mo_pct":2.8197,"real_wage_growth_12mo_pct":1.3425},{"date":"2025-02-01","wage_quartile":"WQ2","nominal_wage_growth_12mo_pct":4.7,"mapped_dcpi_inflation_12mo_pct":2.8338,"real_wage_growth_12mo_pct":1.8148},{"date":"2025-02-01","wage_quartile":"WQ3","nominal_wage_growth_12mo_pct":4.6,"mapped_dcpi_inflation_12mo_pct":2.8486,"real_wage_growth_12mo_pct":1.7029},{"date":"2025-02-01","wage_quartile":"WQ4","nominal_wage_growth_12mo_pct":4.9,"mapped_dcpi_inflation_12mo_pct":2.9536,"real_wage_growth_12mo_pct":1.8906},{"date":"2025-03-01","wage_quartile":"WQ1","nominal_wage_growth_12mo_pct":4.1,"mapped_dcpi_inflation_12mo_pct":2.5262,"real_wage_growth_12mo_pct":1.535},{"date":"2025-03-01","wage_quartile":"WQ2","nominal_wage_growth_12mo_pct":4.6,"mapped_dcpi_inflation_12mo_pct":2.4883,"real_wage_growth_12mo_pct":2.0604},{"date":"2025-03-01","wage_quartile":"WQ3","nominal_wage_growth_12mo_pct":4.7,"mapped_dcpi_inflation_12mo_pct":2.451,"real_wage_growth_12mo_pct":2.1952},{"date":"2025-03-01","wage_quartile":"WQ4","nominal_wage_growth_12mo_pct":5.0,"mapped_dcpi_inflation_12mo_pct":2.5489,"real_wage_growth_12mo_pct":2.3902},{"date":"2025-04-01","wage_quartile":"WQ1","nominal_wage_growth_12mo_pct":3.8,"mapped_dcpi_inflation_12mo_pct":2.4702,"real_wage_growth_12mo_pct":1.2977},{"date":"2025-04-01","wage_quartile":"WQ2","nominal_wage_growth_12mo_pct":4.5,"mapped_dcpi_inflation_12mo_pct":2.4092,"real_wage_growth_12mo_pct":2.0416},{"date":"2025-04-01","wage_quartile":"WQ3","nominal_wage_growth_12mo_pct":4.6,"mapped_dcpi_inflation_12mo_pct":2.3701,"real_wage_growth_12mo_pct":2.1783},{"date":"2025-04-01","wage_quartile":"WQ4","nominal_wage_growth_12mo_pct":4.8,"mapped_dcpi_inflation_12mo_pct":2.4815,"real_wage_growth_12mo_pct":2.2624},{"date":"2025-05-01","wage_quartile":"WQ1","nominal_wage_growth_12mo_pct":3.7,"mapped_dcpi_inflation_12mo_pct":2.5754,"real_wage_growth_12mo_pct":1.0964},{"date":"2025-05-01","wage_quartile":"WQ2","nominal_wage_growth_12mo_pct":4.4,"mapped_dcpi_inflation_12mo_pct":2.4973,"real_wage_growth_12mo_pct":1.8563},{"date":"2025-05-01","wage_quartile":"WQ3","nominal_wage_growth_12mo_pct":4.6,"mapped_dcpi_inflation_12mo_pct":2.4486,"real_wage_growth_12mo_pct":2.0999},{"date":"2025-05-01","wage_quartile":"WQ4","nominal_wage_growth_12mo_pct":4.8,"mapped_dcpi_inflation_12mo_pct":2.533,"real_wage_growth_12mo_pct":2.211},{"date":"2025-06-01","wage_quartile":"WQ1","nominal_wage_growth_12mo_pct":3.6,"mapped_dcpi_inflation_12mo_pct":2.9532,"real_wage_growth_12mo_pct":0.6282},{"date":"2025-06-01","wage_quartile":"WQ2","nominal_wage_growth_12mo_pct":4.4,"mapped_dcpi_inflation_12mo_pct":2.8945,"real_wage_growth_12mo_pct":1.4632},{"date":"2025-06-01","wage_quartile":"WQ3","nominal_wage_growth_12mo_pct":4.4,"mapped_dcpi_inflation_12mo_pct":2.8184,"real_wage_growth_12mo_pct":1.5383},{"date":"2025-06-01","wage_quartile":"WQ4","nominal_wage_growth_12mo_pct":4.8,"mapped_dcpi_inflation_12mo_pct":2.8273,"real_wage_growth_12mo_pct":1.9184},{"date":"2025-07-01","wage_quartile":"WQ1","nominal_wage_growth_12mo_pct":3.6,"mapped_dcpi_inflation_12mo_pct":2.85,"real_wage_growth_12mo_pct":0.7292},{"date":"2025-07-01","wage_quartile":"WQ2","nominal_wage_growth_12mo_pct":4.4,"mapped_dcpi_inflation_12mo_pct":2.8251,"real_wage_growth_12mo_pct":1.5316},{"date":"2025-07-01","wage_quartile":"WQ3","nominal_wage_growth_12mo_pct":4.4,"mapped_dcpi_inflation_12mo_pct":2.6968,"real_wage_growth_12mo_pct":1.6585},{"date":"2025-07-01","wage_quartile":"WQ4","nominal_wage_growth_12mo_pct":4.7,"mapped_dcpi_inflation_12mo_pct":2.6398,"real_wage_growth_12mo_pct":2.0072},{"date":"2025-08-01","wage_quartile":"WQ1","nominal_wage_growth_12mo_pct":3.4,"mapped_dcpi_inflation_12mo_pct":3.084,"real_wage_growth_12mo_pct":0.3065},{"date":"2025-08-01","wage_quartile":"WQ2","nominal_wage_growth_12mo_pct":4.4,"mapped_dcpi_inflation_12mo_pct":3.0794,"real_wage_growth_12mo_pct":1.2811},{"date":"2025-08-01","wage_quartile":"WQ3","nominal_wage_growth_12mo_pct":4.4,"mapped_dcpi_inflation_12mo_pct":2.9455,"real_wage_growth_12mo_pct":1.4128},{"date":"2025-08-01","wage_quartile":"WQ4","nominal_wage_growth_12mo_pct":4.7,"mapped_dcpi_inflation_12mo_pct":2.8464,"real_wage_growth_12mo_pct":1.8023},{"date":"2025-09-01","wage_quartile":"WQ1","nominal_wage_growth_12mo_pct":3.5,"mapped_dcpi_inflation_12mo_pct":3.1592,"real_wage_growth_12mo_pct":0.3304},{"date":"2025-09-01","wage_quartile":"WQ2","nominal_wage_growth_12mo_pct":4.3,"mapped_dcpi_inflation_12mo_pct":3.2065,"real_wage_growth_12mo_pct":1.0595},{"date":"2025-09-01","wage_quartile":"WQ3","nominal_wage_growth_12mo_pct":4.3,"mapped_dcpi_inflation_12mo_pct":3.0781,"real_wage_growth_12mo_pct":1.1854},{"date":"2025-09-01","wage_quartile":"WQ4","nominal_wage_growth_12mo_pct":4.5,"mapped_dcpi_inflation_12mo_pct":2.9312,"real_wage_growth_12mo_pct":1.5241},{"date":"2025-11-01","wage_quartile":"WQ1","nominal_wage_growth_12mo_pct":3.6,"mapped_dcpi_inflation_12mo_pct":3.0297,"real_wage_growth_12mo_pct":0.5536},{"date":"2025-11-01","wage_quartile":"WQ2","nominal_wage_growth_12mo_pct":4.3,"mapped_dcpi_inflation_12mo_pct":3.0234,"real_wage_growth_12mo_pct":1.2392},{"date":"2025-11-01","wage_quartile":"WQ3","nominal_wage_growth_12mo_pct":4.4,"mapped_dcpi_inflation_12mo_pct":2.8522,"real_wage_growth_12mo_pct":1.5049},{"date":"2025-11-01","wage_quartile":"WQ4","nominal_wage_growth_12mo_pct":4.3,"mapped_dcpi_inflation_12mo_pct":2.6252,"real_wage_growth_12mo_pct":1.6319},{"date":"2025-12-01","wage_quartile":"WQ1","nominal_wage_growth_12mo_pct":3.5,"mapped_dcpi_inflation_12mo_pct":3.084,"real_wage_growth_12mo_pct":0.4035},{"date":"2025-12-01","wage_quartile":"WQ2","nominal_wage_growth_12mo_pct":4.3,"mapped_dcpi_inflation_12mo_pct":3.0631,"real_wage_growth_12mo_pct":1.2001},{"date":"2025-12-01","wage_quartile":"WQ3","nominal_wage_growth_12mo_pct":4.4,"mapped_dcpi_inflation_12mo_pct":2.9058,"real_wage_growth_12mo_pct":1.452},{"date":"2025-12-01","wage_quartile":"WQ4","nominal_wage_growth_12mo_pct":4.0,"mapped_dcpi_inflation_12mo_pct":2.7328,"real_wage_growth_12mo_pct":1.2334},{"date":"2026-01-01","wage_quartile":"WQ1","nominal_wage_growth_12mo_pct":3.5,"mapped_dcpi_inflation_12mo_pct":2.9585,"real_wage_growth_12mo_pct":0.526},{"date":"2026-01-01","wage_quartile":"WQ2","nominal_wage_growth_12mo_pct":4.3,"mapped_dcpi_inflation_12mo_pct":2.8589,"real_wage_growth_12mo_pct":1.401},{"date":"2026-01-01","wage_quartile":"WQ3","nominal_wage_growth_12mo_pct":4.4,"mapped_dcpi_inflation_12mo_pct":2.7247,"real_wage_growth_12mo_pct":1.6308},{"date":"2026-01-01","wage_quartile":"WQ4","nominal_wage_growth_12mo_pct":3.9,"mapped_dcpi_inflation_12mo_pct":2.5922,"real_wage_growth_12mo_pct":1.2747},{"date":"2026-02-01","wage_quartile":"WQ1","nominal_wage_growth_12mo_pct":3.5,"mapped_dcpi_inflation_12mo_pct":2.9912,"real_wage_growth_12mo_pct":0.494},{"date":"2026-02-01","wage_quartile":"WQ2","nominal_wage_growth_12mo_pct":4.2,"mapped_dcpi_inflation_12mo_pct":2.9252,"real_wage_growth_12mo_pct":1.2386},{"date":"2026-02-01","wage_quartile":"WQ3","nominal_wage_growth_12mo_pct":4.5,"mapped_dcpi_inflation_12mo_pct":2.8096,"real_wage_growth_12mo_pct":1.6442},{"date":"2026-02-01","wage_quartile":"WQ4","nominal_wage_growth_12mo_pct":3.9,"mapped_dcpi_inflation_12mo_pct":2.6866,"real_wage_growth_12mo_pct":1.1816},{"date":"2026-03-01","wage_quartile":"WQ1","nominal_wage_growth_12mo_pct":3.5,"mapped_dcpi_inflation_12mo_pct":3.6151,"real_wage_growth_12mo_pct":-0.1111},{"date":"2026-03-01","wage_quartile":"WQ2","nominal_wage_growth_12mo_pct":4.2,"mapped_dcpi_inflation_12mo_pct":3.6989,"real_wage_growth_12mo_pct":0.4833},{"date":"2026-03-01","wage_quartile":"WQ3","nominal_wage_growth_12mo_pct":4.4,"mapped_dcpi_inflation_12mo_pct":3.5942,"real_wage_growth_12mo_pct":0.7778},{"date":"2026-03-01","wage_quartile":"WQ4","nominal_wage_growth_12mo_pct":3.8,"mapped_dcpi_inflation_12mo_pct":3.3107,"real_wage_growth_12mo_pct":0.4736},{"date":"2026-04-01","wage_quartile":"WQ1","nominal_wage_growth_12mo_pct":3.6,"mapped_dcpi_inflation_12mo_pct":4.287,"real_wage_growth_12mo_pct":-0.6587},{"date":"2026-04-01","wage_quartile":"WQ2","nominal_wage_growth_12mo_pct":4.1,"mapped_dcpi_inflation_12mo_pct":4.3969,"real_wage_growth_12mo_pct":-0.2844},{"date":"2026-04-01","wage_quartile":"WQ3","nominal_wage_growth_12mo_pct":4.1,"mapped_dcpi_inflation_12mo_pct":4.2634,"real_wage_growth_12mo_pct":-0.1568},{"date":"2026-04-01","wage_quartile":"WQ4","nominal_wage_growth_12mo_pct":3.7,"mapped_dcpi_inflation_12mo_pct":3.872,"real_wage_growth_12mo_pct":-0.1656},{"date":"2026-05-01","wage_quartile":"WQ1","nominal_wage_growth_12mo_pct":3.5,"mapped_dcpi_inflation_12mo_pct":4.6364,"real_wage_growth_12mo_pct":-1.0861},{"date":"2026-05-01","wage_quartile":"WQ2","nominal_wage_growth_12mo_pct":4.0,"mapped_dcpi_inflation_12mo_pct":4.8316,"real_wage_growth_12mo_pct":-0.7933},{"date":"2026-05-01","wage_quartile":"WQ3","nominal_wage_growth_12mo_pct":4.0,"mapped_dcpi_inflation_12mo_pct":4.707,"real_wage_growth_12mo_pct":-0.6753},{"date":"2026-05-01","wage_quartile":"WQ4","nominal_wage_growth_12mo_pct":3.8,"mapped_dcpi_inflation_12mo_pct":4.2309,"real_wage_growth_12mo_pct":-0.4134},{"date":"2026-06-01","wage_quartile":"WQ1","nominal_wage_growth_12mo_pct":3.6,"mapped_dcpi_inflation_12mo_pct":3.9342,"real_wage_growth_12mo_pct":-0.3216},{"date":"2026-06-01","wage_quartile":"WQ2","nominal_wage_growth_12mo_pct":4.0,"mapped_dcpi_inflation_12mo_pct":4.0802,"real_wage_growth_12mo_pct":-0.077},{"date":"2026-06-01","wage_quartile":"WQ3","nominal_wage_growth_12mo_pct":3.9,"mapped_dcpi_inflation_12mo_pct":3.9915,"real_wage_growth_12mo_pct":-0.088},{"date":"2026-06-01","wage_quartile":"WQ4","nominal_wage_growth_12mo_pct":3.9,"mapped_dcpi_inflation_12mo_pct":3.6759,"real_wage_growth_12mo_pct":0.2162}],"drivers":[{"income_quintile":"Q1","major_group_name":"Housing","contribution_pct_points":1.465},{"income_quintile":"Q1","major_group_name":"Transportation","contribution_pct_points":0.92},{"income_quintile":"Q1","major_group_name":"Food and beverages","contribution_pct_points":0.721},{"income_quintile":"Q2","major_group_name":"Housing","contribution_pct_points":1.523},{"income_quintile":"Q2","major_group_name":"Transportation","contribution_pct_points":1.072},{"income_quintile":"Q2","major_group_name":"Food and beverages","contribution_pct_points":0.756},{"income_quintile":"Q3","major_group_name":"Housing","contribution_pct_points":1.459},{"income_quintile":"Q3","major_group_name":"Transportation","contribution_pct_points":1.138},{"income_quintile":"Q3","major_group_name":"Food and beverages","contribution_pct_points":0.715},{"income_quintile":"Q4","major_group_name":"Housing","contribution_pct_points":1.416},{"income_quintile":"Q4","major_group_name":"Transportation","contribution_pct_points":1.102},{"income_quintile":"Q4","major_group_name":"Food and beverages","contribution_pct_points":0.69},{"income_quintile":"Q5","major_group_name":"Housing","contribution_pct_points":1.342},{"income_quintile":"Q5","major_group_name":"Transportation","contribution_pct_points":0.904},{"income_quintile":"Q5","major_group_name":"Food and beverages","contribution_pct_points":0.587}],"validation":{"filter_by_ce_source":"True","raw_rows_before_filter":"1862510","raw_unique_ucc_before_filter":"695","rows_after_filter":"1776892","raw_unique_ucc_after_filter":"679","item_weight_rows":"1083","item_weight_unique_cpi_items":"218","weight_share_sum_min_by_quintile":"1.0","weight_share_sum_max_by_quintile":"1.0","unmatched_unique_ucc":"33","unmatched_weighted_spend":"67868827980.41908","joined_rows_with_prices":"449820","joined_unique_cpi_items":"177","first_price_year":"1984","last_price_year":"2026"},"sources":[{"path":"data\\processed_bls_series\\monthly_cpi_item_prices.csv","modified":"2026-08-05 10:47:33","bytes":19692028},{"path":"intermediate\\US\\income_quintile_dcpi\\2024_sas_filtered_ce_source\\income_quintile_dcpi_monthly.csv","modified":"2026-08-12 09:21:56","bytes":187245},{"path":"intermediate\\US\\real_wage_nowcast\\atlanta_wgt\\atlanta_wgt_real_wage_nowcast.csv","modified":"2026-08-12 09:23:06","bytes":209137},{"path":"data\\raw\\atlanta_fed\\wage-growth-data.xlsx","modified":"2026-08-05 11:45:38","bytes":334497},{"path":"outputs\\master_xwalk_codex_filled\\master_ucc_eli_cpi_xwalk_recreated_v2.xlsx","modified":"2026-07-08 14:52:42","bytes":375363},{"path":"intermediate\\US\\real_wage_nowcast\\atlanta_wgt\\wage_quartile_to_dcpi_quintile_mapping.csv","modified":"2026-08-12 09:23:06","bytes":142},{"path":"intermediate\\US\\income_quintile_dcpi\\2024_sas_filtered_ce_source\\income_quintile_dcpi_item_contributions.csv","modified":"2026-08-12 09:21:59","bytes":46618406},{"path":"intermediate\\US\\income_quintile_dcpi\\2024_sas_filtered_ce_source\\validation_summary.csv","modified":"2026-08-12 09:21:53","bytes":474}]}</script>
+  <script>
+    const data = JSON.parse(document.getElementById('snapshot').textContent);
+    const colors = ['#2f6fbd', '#21855f', '#9c6b18', '#b44747', '#6f55a5'];
+    const fmt = (v, d=2) => Number.isFinite(+v) ? (+v).toFixed(d) : 'n/a';
+    const pct = (v, d=2) => `${fmt(v, d)}%`;
+    const signed = (v, d=2) => `${+v >= 0 ? '+' : ''}${fmt(v, d)}`;
+    const monthLabel = iso => {
+      const dt = new Date(iso + 'T00:00:00');
+      return dt.toLocaleDateString('en-US', { month: 'short', year: '2-digit' });
+    };
+    function renderCards() {
+      const latest = data.latest;
+      const cards = [
+        ['Latest CPI prices', latest.price_month.slice(0,7), `${latest.price_rows} item rows`],
+        ['Average DCPI inflation', pct(latest.avg_dcpi_12mo_pct), '12-month, across quintiles'],
+        ['DCPI spread', pct(latest.spread_dcpi_12mo_pct_points), 'max minus min quintile inflation'],
+        ['Average real wage', pct(latest.avg_real_wage_pct), '12-month nowcast, across wage quartiles'],
+        ['Best / worst wage quartile', `${latest.best_real_wage_quartile} / ${latest.worst_real_wage_quartile}`, 'latest real wage growth']
+      ];
+      document.getElementById('cards').innerHTML = cards.map(([label, value, note]) => `
+        <div class="card"><div class="label">${label}</div><div class="value">${value}</div><div class="note">${note}</div></div>
+      `).join('');
+    }
+    function lineChart(el, legendEl, rows, groupKey, valueKey, yLabel) {
+      const groups = [...new Set(rows.map(r => r[groupKey]))].sort();
+      const dates = [...new Set(rows.map(r => r.date))].sort();
+      const width = 760, height = 320, ml = 48, mr = 18, mt = 20, mb = 38;
+      const vals = rows.map(r => +r[valueKey]).filter(Number.isFinite);
+      let ymin = Math.min(0, Math.min(...vals)), ymax = Math.max(0, Math.max(...vals));
+      const pad = Math.max(0.25, (ymax - ymin) * 0.12); ymin -= pad; ymax += pad;
+      const x = d => ml + (dates.indexOf(d) / Math.max(1, dates.length - 1)) * (width - ml - mr);
+      const y = v => mt + (ymax - v) / (ymax - ymin) * (height - mt - mb);
+      const ticks = 5;
+      let grid = '';
+      for (let i = 0; i <= ticks; i++) {
+        const val = ymin + (ymax - ymin) * i / ticks;
+        const yy = y(val);
+        grid += `<line x1="${ml}" x2="${width-mr}" y1="${yy}" y2="${yy}" stroke="#e5e9f0"/><text x="${ml-7}" y="${yy+4}" text-anchor="end" font-size="11" fill="#617083">${val.toFixed(1)}</text>`;
+      }
+      let paths = '';
+      groups.forEach((g, gi) => {
+        const gRows = rows.filter(r => r[groupKey] === g).sort((a,b) => a.date.localeCompare(b.date));
+        const pts = gRows.map(r => `${x(r.date)},${y(+r[valueKey])}`).join(' ');
+        paths += `<polyline points="${pts}" fill="none" stroke="${colors[gi % colors.length]}" stroke-width="2.4"/>`;
+        const last = gRows[gRows.length - 1];
+        paths += `<circle cx="${x(last.date)}" cy="${y(+last[valueKey])}" r="3.5" fill="${colors[gi % colors.length]}"/>`;
+      });
+      const xLabels = dates.filter((_, i) => i === 0 || i === dates.length - 1 || i % 4 === 0)
+        .map(d => `<text x="${x(d)}" y="${height-13}" text-anchor="middle" font-size="11" fill="#617083">${monthLabel(d)}</text>`).join('');
+      el.innerHTML = `<svg viewBox="0 0 ${width} ${height}" role="img" aria-label="${yLabel}">
+        <rect x="0" y="0" width="${width}" height="${height}" fill="white"/>
+        ${grid}
+        <line x1="${ml}" x2="${width-mr}" y1="${y(0)}" y2="${y(0)}" stroke="#394150"/>
+        ${paths}${xLabels}
+        <text x="14" y="18" font-size="11" fill="#617083">${yLabel}</text>
+      </svg>`;
+      legendEl.innerHTML = groups.map((g, i) => `<span><span class="swatch" style="background:${colors[i % colors.length]}"></span>${g}</span>`).join('');
+    }
+    function groupedBars(el, rows) {
+      const groups = rows.map(r => r.wage_quartile);
+      const series = [
+        ['Nominal wage', 'nominal_wage_growth_12mo_pct', '#2f6fbd'],
+        ['Mapped DCPI', 'mapped_dcpi_inflation_12mo_pct', '#9c6b18'],
+        ['Real wage', 'real_wage_growth_12mo_pct', '#21855f']
+      ];
+      const width = 760, height = 320, ml = 48, mr = 18, mt = 22, mb = 48;
+      const vals = rows.flatMap(r => series.map(s => +r[s[1]])).filter(Number.isFinite);
+      let ymin = Math.min(0, ...vals), ymax = Math.max(0, ...vals);
+      const pad = Math.max(0.4, (ymax - ymin) * .12); ymin -= pad; ymax += pad;
+      const y = v => mt + (ymax - v) / (ymax - ymin) * (height - mt - mb);
+      const cluster = (width - ml - mr) / groups.length;
+      const barW = Math.min(34, cluster / 4.5);
+      let marks = '';
+      rows.forEach((r, i) => {
+        const cx = ml + i * cluster + cluster / 2;
+        series.forEach((s, si) => {
+          const val = +r[s[1]];
+          const x = cx + (si - 1) * (barW + 4);
+          const yy = y(Math.max(0, val));
+          const hh = Math.abs(y(val) - y(0));
+          marks += `<rect x="${x - barW/2}" y="${yy}" width="${barW}" height="${hh}" fill="${s[2]}"/>`;
+        });
+        marks += `<text x="${cx}" y="${height-18}" text-anchor="middle" font-size="12" fill="#617083">${r.wage_quartile}</text>`;
+      });
+      const grid = [-1,0,1,2,3,4,5].filter(v => v >= ymin && v <= ymax).map(v =>
+        `<line x1="${ml}" x2="${width-mr}" y1="${y(v)}" y2="${y(v)}" stroke="${v===0 ? '#394150' : '#e5e9f0'}"/><text x="${ml-7}" y="${y(v)+4}" text-anchor="end" font-size="11" fill="#617083">${v}</text>`
+      ).join('');
+      el.innerHTML = `<svg viewBox="0 0 ${width} ${height}" role="img" aria-label="Wage growth components">${grid}${marks}</svg>
+      <div class="legend">${series.map(s => `<span><span class="swatch" style="background:${s[2]}"></span>${s[0]}</span>`).join('')}</div>`;
+    }
+    function driverChart(el, rows) {
+      const quintiles = [...new Set(rows.map(r => r.income_quintile))].sort();
+      const width = 760, height = 320, ml = 150, mr = 34, mt = 20, mb = 36;
+      const values = rows.map(r => +r.contribution_pct_points).filter(Number.isFinite);
+      const maxAbs = Math.max(0.1, ...values.map(Math.abs));
+      const x = v => ml + ((v + maxAbs) / (maxAbs * 2)) * (width - ml - mr);
+      const zero = x(0);
+      const groupH = (height - mt - mb) / quintiles.length;
+      const barH = Math.min(14, groupH / 4.2);
+      const categoryColor = name => {
+        const palette = ['#2f6fbd','#21855f','#9c6b18','#b44747','#6f55a5','#487c8f','#8a6d3b'];
+        let h = 0;
+        for (let i = 0; i < name.length; i++) h = (h * 31 + name.charCodeAt(i)) % 997;
+        return palette[h % palette.length];
+      };
+      let marks = `<line x1="${zero}" x2="${zero}" y1="${mt}" y2="${height-mb}" stroke="#394150"/>`;
+      const ticks = [-maxAbs, -maxAbs/2, 0, maxAbs/2, maxAbs];
+      marks += ticks.map(t => `<line x1="${x(t)}" x2="${x(t)}" y1="${mt}" y2="${height-mb}" stroke="${Math.abs(t) < 1e-9 ? '#394150' : '#e5e9f0'}"/><text x="${x(t)}" y="${height-14}" text-anchor="middle" font-size="11" fill="#617083">${t.toFixed(1)}</text>`).join('');
+      quintiles.forEach((q, qi) => {
+        const qRows = rows.filter(r => r.income_quintile === q).sort((a,b) => Math.abs(b.contribution_pct_points) - Math.abs(a.contribution_pct_points));
+        const baseY = mt + qi * groupH + groupH / 2;
+        marks += `<text x="${ml-104}" y="${baseY+4}" font-size="12" fill="#17202a" font-weight="700">${q}</text>`;
+        qRows.forEach((r, ri) => {
+          const v = +r.contribution_pct_points;
+          const y = baseY + (ri - (qRows.length - 1) / 2) * (barH + 5) - barH / 2;
+          const x0 = Math.min(zero, x(v));
+          const w = Math.abs(x(v) - zero);
+          const label = r.major_group_name.length > 24 ? r.major_group_name.slice(0, 22) + '...' : r.major_group_name;
+          marks += `<rect x="${x0}" y="${y}" width="${w}" height="${barH}" fill="${categoryColor(r.major_group_name)}"/>`;
+          marks += `<text x="${ml-8}" y="${y+barH-2}" text-anchor="end" font-size="10.5" fill="#617083">${label}</text>`;
+          marks += `<text x="${v >= 0 ? x(v)+4 : x(v)-4}" y="${y+barH-2}" text-anchor="${v >= 0 ? 'start' : 'end'}" font-size="10.5" fill="#617083">${signed(v, 2)} pp</text>`;
+        });
+      });
+      el.innerHTML = `<svg viewBox="0 0 ${width} ${height}" role="img" aria-label="Largest category contributions to DCPI inflation">
+        <rect width="${width}" height="${height}" fill="white"/>
+        ${marks}
+        <text x="${width-mr}" y="${height-14}" text-anchor="end" font-size="11" fill="#617083">percentage points</text>
+      </svg>
+      <p class="small">Bars show approximate contribution to 12-month DCPI inflation in percentage points, ranked by absolute contribution within each quintile.</p>`;
+    }
+    function table(el, rows, cols) {
+      el.innerHTML = `<table><thead><tr>${cols.map(c => `<th>${c.label}</th>`).join('')}</tr></thead><tbody>${
+        rows.map(r => `<tr>${cols.map(c => `<td class="${c.className || ''}">${c.format ? c.format(r[c.key], r) : r[c.key]}</td>`).join('')}</tr>`).join('')
+      }</tbody></table>`;
+    }
+    renderCards();
+    lineChart(document.getElementById('dcpiChart'), document.getElementById('dcpiLegend'), data.dcpi_recent, 'income_quintile', 'dcpi_12mo_change_pct', '12-month inflation, %');
+    lineChart(document.getElementById('realChart'), document.getElementById('realLegend'), data.nowcast_recent, 'wage_quartile', 'real_wage_growth_12mo_pct', 'real wage growth, %');
+    groupedBars(document.getElementById('componentChart'), data.nowcast_latest);
+    table(document.getElementById('dcpiTable'), data.dcpi_latest, [
+      {key:'income_quintile', label:'Quintile'},
+      {key:'dcpi_index', label:'Index', format:v=>fmt(v,2)},
+      {key:'dcpi_monthly_change_pct', label:'Monthly', format:v=>pct(v,2)},
+      {key:'dcpi_12mo_change_pct', label:'12-mo', format:v=>pct(v,2)},
+      {key:'mom_change_in_12mo_pct_points', label:'Change vs prior month', format:v=>signed(v,2)+' pp'}
+    ]);
+    table(document.getElementById('nowcastTable'), data.nowcast_latest, [
+      {key:'wage_quartile', label:'Quartile'},
+      {key:'nominal_wage_growth_12mo_pct', label:'Nominal wage', format:v=>pct(v,2)},
+      {key:'mapped_dcpi_inflation_12mo_pct', label:'Mapped DCPI', format:v=>pct(v,2)},
+      {key:'real_wage_growth_12mo_pct', label:'Real wage', format:v=>pct(v,2)},
+      {key:'mom_change_in_real_wage_pct_points', label:'Change vs prior month', format:v=>signed(v,2)+' pp'}
+    ]);
+    driverChart(document.getElementById('driversChart'), data.drivers);
+    document.getElementById('sources').innerHTML = data.sources.map(s =>
+      `<li><code>${s.path}</code> modified ${s.modified}; ${Math.round(s.bytes/1024).toLocaleString()} KB</li>`
+    ).join('');
+  </script>
+</body>
+</html>
