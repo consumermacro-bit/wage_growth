@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-12T13:34:50.591653+00:00",
+  "generated_at": "2026-08-17T20:07:12.503196+00:00",
   "latest": {
-    "price_month": "2026-06-01",
+    "price_month": "2026-07-01",
     "price_rows": 205,
-    "dcpi_month": "2026-06-01",
-    "nowcast_month": "2026-06-01",
-    "avg_dcpi_12mo_pct": 3.92,
-    "spread_dcpi_12mo_pct_points": 0.473,
-    "avg_real_wage_pct": -0.068,
+    "dcpi_month": "2026-07-01",
+    "nowcast_month": "2026-07-01",
+    "avg_dcpi_12mo_pct": 3.676,
+    "spread_dcpi_12mo_pct_points": 0.463,
+    "avg_real_wage_pct": 0.168,
     "best_real_wage_quartile": "WQ4",
     "worst_real_wage_quartile": "WQ1",
     "xwalk_name": "master_ucc_eli_cpi_xwalk_recreated_v2.xlsx"
@@ -15,77 +15,71 @@
   "dcpi_latest": [
     {
       "income_quintile": "Q1",
-      "dcpi_index": 246.3503,
-      "dcpi_monthly_change_pct": -0.1293,
-      "dcpi_12mo_change_pct": 3.8968,
-      "mom_change_in_12mo_pct_points": -0.6911
+      "dcpi_index": 246.3942,
+      "dcpi_monthly_change_pct": 0.0178,
+      "dcpi_12mo_change_pct": 3.6926,
+      "mom_change_in_12mo_pct_points": -0.2042
     },
     {
       "income_quintile": "Q2",
-      "dcpi_index": 243.5412,
-      "dcpi_monthly_change_pct": -0.215,
-      "dcpi_12mo_change_pct": 4.0841,
-      "mom_change_in_12mo_pct_points": -0.7468
+      "dcpi_index": 243.5133,
+      "dcpi_monthly_change_pct": -0.0115,
+      "dcpi_12mo_change_pct": 3.831,
+      "mom_change_in_12mo_pct_points": -0.2531
     },
     {
       "income_quintile": "Q3",
-      "dcpi_index": 247.4324,
-      "dcpi_monthly_change_pct": -0.2392,
-      "dcpi_12mo_change_pct": 4.0743,
-      "mom_change_in_12mo_pct_points": -0.7584
+      "dcpi_index": 247.3741,
+      "dcpi_monthly_change_pct": -0.0236,
+      "dcpi_12mo_change_pct": 3.8149,
+      "mom_change_in_12mo_pct_points": -0.2594
     },
     {
       "income_quintile": "Q4",
-      "dcpi_index": 254.6104,
-      "dcpi_monthly_change_pct": -0.2373,
-      "dcpi_12mo_change_pct": 3.9363,
-      "mom_change_in_12mo_pct_points": -0.6869
+      "dcpi_index": 254.5167,
+      "dcpi_monthly_change_pct": -0.0368,
+      "dcpi_12mo_change_pct": 3.6756,
+      "mom_change_in_12mo_pct_points": -0.2607
     },
     {
       "income_quintile": "Q5",
-      "dcpi_index": 269.8549,
-      "dcpi_monthly_change_pct": -0.1393,
-      "dcpi_12mo_change_pct": 3.6108,
-      "mom_change_in_12mo_pct_points": -0.5221
+      "dcpi_index": 269.7956,
+      "dcpi_monthly_change_pct": -0.022,
+      "dcpi_12mo_change_pct": 3.3681,
+      "mom_change_in_12mo_pct_points": -0.2426
     }
   ],
   "nowcast_latest": [
     {
       "wage_quartile": "WQ1",
-      "nominal_wage_growth_12mo_pct": 3.6,
-      "mapped_dcpi_inflation_12mo_pct": 3.9342,
-      "real_wage_growth_12mo_pct": -0.3216,
-      "mom_change_in_real_wage_pct_points": 0.7645
+      "nominal_wage_growth_12mo_pct": 3.7,
+      "mapped_dcpi_inflation_12mo_pct": 3.7203,
+      "real_wage_growth_12mo_pct": -0.0196,
+      "mom_change_in_real_wage_pct_points": 0.302
     },
     {
       "wage_quartile": "WQ2",
-      "nominal_wage_growth_12mo_pct": 4.0,
-      "mapped_dcpi_inflation_12mo_pct": 4.0802,
-      "real_wage_growth_12mo_pct": -0.077,
-      "mom_change_in_real_wage_pct_points": 0.7163
+      "nominal_wage_growth_12mo_pct": 3.9,
+      "mapped_dcpi_inflation_12mo_pct": 3.8246,
+      "real_wage_growth_12mo_pct": 0.0727,
+      "mom_change_in_real_wage_pct_points": 0.1497
     },
     {
       "wage_quartile": "WQ3",
-      "nominal_wage_growth_12mo_pct": 3.9,
-      "mapped_dcpi_inflation_12mo_pct": 3.9915,
-      "real_wage_growth_12mo_pct": -0.088,
-      "mom_change_in_real_wage_pct_points": 0.5873
+      "nominal_wage_growth_12mo_pct": 4.0,
+      "mapped_dcpi_inflation_12mo_pct": 3.7313,
+      "real_wage_growth_12mo_pct": 0.259,
+      "mom_change_in_real_wage_pct_points": 0.347
     },
     {
       "wage_quartile": "WQ4",
-      "nominal_wage_growth_12mo_pct": 3.9,
-      "mapped_dcpi_inflation_12mo_pct": 3.6759,
-      "real_wage_growth_12mo_pct": 0.2162,
-      "mom_change_in_real_wage_pct_points": 0.6296
+      "nominal_wage_growth_12mo_pct": 3.8,
+      "mapped_dcpi_inflation_12mo_pct": 3.4296,
+      "real_wage_growth_12mo_pct": 0.3581,
+      "mom_change_in_real_wage_pct_points": 0.1419
     }
   ],
   "dcpi_recent": [
-    {
-      "date": "2025-01-01",
-      "income_quintile": "Q1",
-      "dcpi_index": 233.0576,
-      "dcpi_12mo_change_pct": 2.9118
-    },
     {
       "date": "2025-02-01",
       "income_quintile": "Q1",
@@ -189,10 +183,10 @@
       "dcpi_12mo_change_pct": 3.8968
     },
     {
-      "date": "2025-01-01",
-      "income_quintile": "Q2",
-      "dcpi_index": 229.9958,
-      "dcpi_12mo_change_pct": 2.9828
+      "date": "2026-07-01",
+      "income_quintile": "Q1",
+      "dcpi_index": 246.3942,
+      "dcpi_12mo_change_pct": 3.6926
     },
     {
       "date": "2025-02-01",
@@ -297,10 +291,10 @@
       "dcpi_12mo_change_pct": 4.0841
     },
     {
-      "date": "2025-01-01",
-      "income_quintile": "Q3",
-      "dcpi_index": 233.7055,
-      "dcpi_12mo_change_pct": 2.942
+      "date": "2026-07-01",
+      "income_quintile": "Q2",
+      "dcpi_index": 243.5133,
+      "dcpi_12mo_change_pct": 3.831
     },
     {
       "date": "2025-02-01",
@@ -405,10 +399,10 @@
       "dcpi_12mo_change_pct": 4.0743
     },
     {
-      "date": "2025-01-01",
-      "income_quintile": "Q4",
-      "dcpi_index": 241.054,
-      "dcpi_12mo_change_pct": 3.0233
+      "date": "2026-07-01",
+      "income_quintile": "Q3",
+      "dcpi_index": 247.3741,
+      "dcpi_12mo_change_pct": 3.8149
     },
     {
       "date": "2025-02-01",
@@ -513,10 +507,10 @@
       "dcpi_12mo_change_pct": 3.9363
     },
     {
-      "date": "2025-01-01",
-      "income_quintile": "Q5",
-      "dcpi_index": 256.6374,
-      "dcpi_12mo_change_pct": 3.1144
+      "date": "2026-07-01",
+      "income_quintile": "Q4",
+      "dcpi_index": 254.5167,
+      "dcpi_12mo_change_pct": 3.6756
     },
     {
       "date": "2025-02-01",
@@ -619,37 +613,15 @@
       "income_quintile": "Q5",
       "dcpi_index": 269.8549,
       "dcpi_12mo_change_pct": 3.6108
+    },
+    {
+      "date": "2026-07-01",
+      "income_quintile": "Q5",
+      "dcpi_index": 269.7956,
+      "dcpi_12mo_change_pct": 3.3681
     }
   ],
   "nowcast_recent": [
-    {
-      "date": "2025-01-01",
-      "wage_quartile": "WQ1",
-      "nominal_wage_growth_12mo_pct": 4.2,
-      "mapped_dcpi_inflation_12mo_pct": 2.926,
-      "real_wage_growth_12mo_pct": 1.2378
-    },
-    {
-      "date": "2025-01-01",
-      "wage_quartile": "WQ2",
-      "nominal_wage_growth_12mo_pct": 4.7,
-      "mapped_dcpi_inflation_12mo_pct": 2.9665,
-      "real_wage_growth_12mo_pct": 1.6836
-    },
-    {
-      "date": "2025-01-01",
-      "wage_quartile": "WQ3",
-      "nominal_wage_growth_12mo_pct": 4.7,
-      "mapped_dcpi_inflation_12mo_pct": 2.9908,
-      "real_wage_growth_12mo_pct": 1.6596
-    },
-    {
-      "date": "2025-01-01",
-      "wage_quartile": "WQ4",
-      "nominal_wage_growth_12mo_pct": 4.9,
-      "mapped_dcpi_inflation_12mo_pct": 3.0962,
-      "real_wage_growth_12mo_pct": 1.7497
-    },
     {
       "date": "2025-02-01",
       "wage_quartile": "WQ1",
@@ -1097,83 +1069,4675 @@
       "nominal_wage_growth_12mo_pct": 3.9,
       "mapped_dcpi_inflation_12mo_pct": 3.6759,
       "real_wage_growth_12mo_pct": 0.2162
+    },
+    {
+      "date": "2026-07-01",
+      "wage_quartile": "WQ1",
+      "nominal_wage_growth_12mo_pct": 3.7,
+      "mapped_dcpi_inflation_12mo_pct": 3.7203,
+      "real_wage_growth_12mo_pct": -0.0196
+    },
+    {
+      "date": "2026-07-01",
+      "wage_quartile": "WQ2",
+      "nominal_wage_growth_12mo_pct": 3.9,
+      "mapped_dcpi_inflation_12mo_pct": 3.8246,
+      "real_wage_growth_12mo_pct": 0.0727
+    },
+    {
+      "date": "2026-07-01",
+      "wage_quartile": "WQ3",
+      "nominal_wage_growth_12mo_pct": 4.0,
+      "mapped_dcpi_inflation_12mo_pct": 3.7313,
+      "real_wage_growth_12mo_pct": 0.259
+    },
+    {
+      "date": "2026-07-01",
+      "wage_quartile": "WQ4",
+      "nominal_wage_growth_12mo_pct": 3.8,
+      "mapped_dcpi_inflation_12mo_pct": 3.4296,
+      "real_wage_growth_12mo_pct": 0.3581
     }
   ],
   "drivers": [
     {
       "income_quintile": "Q1",
       "major_group_name": "Housing",
-      "contribution_pct_points": 1.465
+      "contribution_pct_points": 1.451
     },
     {
       "income_quintile": "Q1",
       "major_group_name": "Transportation",
-      "contribution_pct_points": 0.92
+      "contribution_pct_points": 0.831
     },
     {
       "income_quintile": "Q1",
       "major_group_name": "Food and beverages",
-      "contribution_pct_points": 0.721
+      "contribution_pct_points": 0.676
     },
     {
       "income_quintile": "Q2",
       "major_group_name": "Housing",
-      "contribution_pct_points": 1.523
+      "contribution_pct_points": 1.498
     },
     {
+      "income_quintile": "Q2",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 0.966
+    },
+    {
+      "income_quintile": "Q2",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.708
+    },
+    {
+      "income_quintile": "Q3",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.424
+    },
+    {
+      "income_quintile": "Q3",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 1.022
+    },
+    {
+      "income_quintile": "Q3",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.677
+    },
+    {
+      "income_quintile": "Q4",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.374
+    },
+    {
+      "income_quintile": "Q4",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 0.992
+    },
+    {
+      "income_quintile": "Q4",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.654
+    },
+    {
+      "income_quintile": "Q5",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.285
+    },
+    {
+      "income_quintile": "Q5",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 0.812
+    },
+    {
+      "income_quintile": "Q5",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.559
+    }
+  ],
+  "decomposition_recent": [
+    {
+      "date": "2025-02-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0013
+    },
+    {
+      "date": "2025-02-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.1263
+    },
+    {
+      "date": "2025-02-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.3721
+    },
+    {
+      "date": "2025-02-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.8142
+    },
+    {
+      "date": "2025-02-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2731
+    },
+    {
+      "date": "2025-02-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1454
+    },
+    {
+      "date": "2025-02-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.129
+    },
+    {
+      "date": "2025-02-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.0502
+    },
+    {
+      "date": "2025-03-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0061
+    },
+    {
+      "date": "2025-03-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.1302
+    },
+    {
+      "date": "2025-03-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.4608
+    },
+    {
+      "date": "2025-03-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.6998
+    },
+    {
+      "date": "2025-03-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2341
+    },
+    {
+      "date": "2025-03-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1614
+    },
+    {
+      "date": "2025-03-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.115
+    },
+    {
+      "date": "2025-03-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.28
+    },
+    {
+      "date": "2025-04-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": -0.0056
+    },
+    {
+      "date": "2025-04-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.1226
+    },
+    {
+      "date": "2025-04-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.4325
+    },
+    {
+      "date": "2025-04-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.7859
+    },
+    {
+      "date": "2025-04-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2424
+    },
+    {
+      "date": "2025-04-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1606
+    },
+    {
+      "date": "2025-04-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.0965
+    },
+    {
+      "date": "2025-04-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.3581
+    },
+    {
+      "date": "2025-05-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": -0.0116
+    },
+    {
+      "date": "2025-05-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.1156
+    },
+    {
+      "date": "2025-05-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.4964
+    },
+    {
+      "date": "2025-05-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.8647
+    },
+    {
+      "date": "2025-05-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2136
+    },
+    {
+      "date": "2025-05-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1482
+    },
+    {
+      "date": "2025-05-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1139
+    },
+    {
+      "date": "2025-05-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.3539
+    },
+    {
+      "date": "2025-06-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": -0.004
+    },
+    {
+      "date": "2025-06-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.1164
+    },
+    {
+      "date": "2025-06-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.5529
+    },
+    {
+      "date": "2025-06-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.9915
+    },
+    {
+      "date": "2025-06-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2371
+    },
+    {
+      "date": "2025-06-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1531
+    },
+    {
+      "date": "2025-06-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1183
+    },
+    {
+      "date": "2025-06-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.2046
+    },
+    {
+      "date": "2025-07-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0034
+    },
+    {
+      "date": "2025-07-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.1216
+    },
+    {
+      "date": "2025-07-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.5624
+    },
+    {
+      "date": "2025-07-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.7676
+    },
+    {
+      "date": "2025-07-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2937
+    },
+    {
+      "date": "2025-07-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1674
+    },
+    {
+      "date": "2025-07-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1257
+    },
+    {
+      "date": "2025-07-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.1938
+    },
+    {
+      "date": "2025-08-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0099
+    },
+    {
+      "date": "2025-08-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.1145
+    },
+    {
+      "date": "2025-08-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.6676
+    },
+    {
+      "date": "2025-08-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.7924
+    },
+    {
+      "date": "2025-08-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2875
+    },
+    {
+      "date": "2025-08-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.167
+    },
+    {
+      "date": "2025-08-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1167
+    },
+    {
+      "date": "2025-08-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.0787
+    },
+    {
+      "date": "2025-09-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0096
+    },
+    {
+      "date": "2025-09-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.0788
+    },
+    {
+      "date": "2025-09-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.6784
+    },
+    {
+      "date": "2025-09-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.6783
+    },
+    {
+      "date": "2025-09-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2895
+    },
+    {
+      "date": "2025-09-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1711
+    },
+    {
+      "date": "2025-09-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1414
+    },
+    {
+      "date": "2025-09-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 0.0921
+    },
+    {
+      "date": "2025-10-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0238
+    },
+    {
+      "date": "2025-10-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.0788
+    },
+    {
+      "date": "2025-10-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.6409
+    },
+    {
+      "date": "2025-10-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.6331
+    },
+    {
+      "date": "2025-10-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2741
+    },
+    {
+      "date": "2025-10-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1546
+    },
+    {
+      "date": "2025-10-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.136
+    },
+    {
+      "date": "2025-10-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 0.0284
+    },
+    {
+      "date": "2025-11-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": -0.0011
+    },
+    {
+      "date": "2025-11-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.1127
+    },
+    {
+      "date": "2025-11-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.589
+    },
+    {
+      "date": "2025-11-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.6527
+    },
+    {
+      "date": "2025-11-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2905
+    },
+    {
+      "date": "2025-11-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1719
+    },
+    {
+      "date": "2025-11-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.118
+    },
+    {
+      "date": "2025-11-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 0.088
+    },
+    {
+      "date": "2025-12-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0103
+    },
+    {
+      "date": "2025-12-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.084
+    },
+    {
+      "date": "2025-12-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.6812
+    },
+    {
+      "date": "2025-12-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.6699
+    },
+    {
+      "date": "2025-12-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.3174
+    },
+    {
+      "date": "2025-12-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1798
+    },
+    {
+      "date": "2025-12-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1761
+    },
+    {
+      "date": "2025-12-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.0406
+    },
+    {
+      "date": "2026-01-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0313
+    },
+    {
+      "date": "2026-01-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.1085
+    },
+    {
+      "date": "2026-01-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.7025
+    },
+    {
+      "date": "2026-01-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.6137
+    },
+    {
+      "date": "2026-01-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.3101
+    },
+    {
+      "date": "2026-01-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.2043
+    },
+    {
+      "date": "2026-01-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1435
+    },
+    {
+      "date": "2026-01-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.1374
+    },
+    {
+      "date": "2026-02-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0379
+    },
+    {
+      "date": "2026-02-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.1025
+    },
+    {
+      "date": "2026-02-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.7976
+    },
+    {
+      "date": "2026-02-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.5065
+    },
+    {
+      "date": "2026-02-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.3444
+    },
+    {
+      "date": "2026-02-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1824
+    },
+    {
+      "date": "2026-02-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.0958
+    },
+    {
+      "date": "2026-02-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.0645
+    },
+    {
+      "date": "2026-03-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0452
+    },
+    {
+      "date": "2026-03-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.1008
+    },
+    {
+      "date": "2026-03-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.708
+    },
+    {
+      "date": "2026-03-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.5114
+    },
+    {
+      "date": "2026-03-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.3276
+    },
+    {
+      "date": "2026-03-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1601
+    },
+    {
+      "date": "2026-03-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1001
+    },
+    {
+      "date": "2026-03-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 0.6396
+    },
+    {
+      "date": "2026-04-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0589
+    },
+    {
+      "date": "2026-04-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.1092
+    },
+    {
+      "date": "2026-04-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.8188
+    },
+    {
+      "date": "2026-04-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.6938
+    },
+    {
+      "date": "2026-04-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.3312
+    },
+    {
+      "date": "2026-04-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1838
+    },
+    {
+      "date": "2026-04-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1167
+    },
+    {
+      "date": "2026-04-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 0.945
+    },
+    {
+      "date": "2026-05-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0676
+    },
+    {
+      "date": "2026-05-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.1264
+    },
+    {
+      "date": "2026-05-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.7706
+    },
+    {
+      "date": "2026-05-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.6624
+    },
+    {
+      "date": "2026-05-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.3373
+    },
+    {
+      "date": "2026-05-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.2067
+    },
+    {
+      "date": "2026-05-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1327
+    },
+    {
+      "date": "2026-05-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 1.284
+    },
+    {
+      "date": "2026-06-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0599
+    },
+    {
+      "date": "2026-06-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.1033
+    },
+    {
+      "date": "2026-06-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.7208
+    },
+    {
+      "date": "2026-06-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.4654
+    },
+    {
+      "date": "2026-06-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2956
+    },
+    {
+      "date": "2026-06-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1871
+    },
+    {
+      "date": "2026-06-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1451
+    },
+    {
+      "date": "2026-06-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 0.9197
+    },
+    {
+      "date": "2026-07-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0572
+    },
+    {
+      "date": "2026-07-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.1262
+    },
+    {
+      "date": "2026-07-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.6759
+    },
+    {
+      "date": "2026-07-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.4511
+    },
+    {
+      "date": "2026-07-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2445
+    },
+    {
+      "date": "2026-07-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1759
+    },
+    {
+      "date": "2026-07-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1306
+    },
+    {
+      "date": "2026-07-01",
+      "income_quintile": "Q1",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 0.8313
+    },
+    {
+      "date": "2025-02-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0055
+    },
+    {
+      "date": "2025-02-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.05
+    },
+    {
+      "date": "2025-02-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.4069
+    },
+    {
+      "date": "2025-02-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.8803
+    },
+    {
+      "date": "2025-02-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.3051
+    },
+    {
+      "date": "2025-02-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1116
+    },
+    {
+      "date": "2025-02-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1434
+    },
+    {
+      "date": "2025-02-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.0493
+    },
+    {
+      "date": "2025-03-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0103
+    },
+    {
+      "date": "2025-03-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.052
+    },
+    {
+      "date": "2025-03-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.4963
+    },
+    {
+      "date": "2025-03-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.7673
+    },
+    {
+      "date": "2025-03-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2594
+    },
+    {
+      "date": "2025-03-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1344
+    },
+    {
+      "date": "2025-03-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1304
+    },
+    {
+      "date": "2025-03-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.3282
+    },
+    {
+      "date": "2025-04-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": -0.0008
+    },
+    {
+      "date": "2025-04-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.0443
+    },
+    {
+      "date": "2025-04-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.4679
+    },
+    {
+      "date": "2025-04-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.8379
+    },
+    {
+      "date": "2025-04-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2682
+    },
+    {
+      "date": "2025-04-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1332
+    },
+    {
+      "date": "2025-04-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1105
+    },
+    {
+      "date": "2025-04-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.417
+    },
+    {
+      "date": "2025-05-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": -0.0093
+    },
+    {
+      "date": "2025-05-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.0394
+    },
+    {
+      "date": "2025-05-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.5293
+    },
+    {
+      "date": "2025-05-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.8977
+    },
+    {
+      "date": "2025-05-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.228
+    },
+    {
+      "date": "2025-05-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1221
+    },
+    {
+      "date": "2025-05-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1298
+    },
+    {
+      "date": "2025-05-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.4085
+    },
+    {
+      "date": "2025-06-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": -0.002
+    },
+    {
+      "date": "2025-06-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.0401
+    },
+    {
+      "date": "2025-06-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.586
+    },
+    {
+      "date": "2025-06-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.9976
+    },
+    {
+      "date": "2025-06-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2621
+    },
+    {
+      "date": "2025-06-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1279
+    },
+    {
+      "date": "2025-06-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.134
+    },
+    {
+      "date": "2025-06-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.2216
+    },
+    {
+      "date": "2025-07-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0027
+    },
+    {
+      "date": "2025-07-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.0409
+    },
+    {
+      "date": "2025-07-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.5987
+    },
+    {
+      "date": "2025-07-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.8054
+    },
+    {
+      "date": "2025-07-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.3291
+    },
+    {
+      "date": "2025-07-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1401
+    },
+    {
+      "date": "2025-07-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1419
+    },
+    {
+      "date": "2025-07-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.2003
+    },
+    {
+      "date": "2025-08-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0101
+    },
+    {
+      "date": "2025-08-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.0389
+    },
+    {
+      "date": "2025-08-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.7052
+    },
+    {
+      "date": "2025-08-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.8164
+    },
+    {
+      "date": "2025-08-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.3225
+    },
+    {
+      "date": "2025-08-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.141
+    },
+    {
+      "date": "2025-08-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1315
+    },
+    {
+      "date": "2025-08-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.0527
+    },
+    {
+      "date": "2025-09-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0079
+    },
+    {
+      "date": "2025-09-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.0333
+    },
+    {
+      "date": "2025-09-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.7174
+    },
+    {
+      "date": "2025-09-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.7169
+    },
+    {
+      "date": "2025-09-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.3156
+    },
+    {
+      "date": "2025-09-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1412
+    },
+    {
+      "date": "2025-09-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1595
+    },
+    {
+      "date": "2025-09-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 0.1466
+    },
+    {
+      "date": "2025-10-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0239
+    },
+    {
+      "date": "2025-10-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.0379
+    },
+    {
+      "date": "2025-10-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.6779
+    },
+    {
+      "date": "2025-10-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.6446
+    },
+    {
+      "date": "2025-10-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2955
+    },
+    {
+      "date": "2025-10-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1286
+    },
+    {
+      "date": "2025-10-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1513
+    },
+    {
+      "date": "2025-10-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 0.0715
+    },
+    {
+      "date": "2025-11-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0
+    },
+    {
+      "date": "2025-11-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.0569
+    },
+    {
+      "date": "2025-11-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.6331
+    },
+    {
+      "date": "2025-11-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.6432
+    },
+    {
+      "date": "2025-11-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.3167
+    },
+    {
+      "date": "2025-11-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1447
+    },
+    {
+      "date": "2025-11-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1298
+    },
+    {
+      "date": "2025-11-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 0.1371
+    },
+    {
+      "date": "2025-12-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0076
+    },
+    {
+      "date": "2025-12-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.0346
+    },
+    {
+      "date": "2025-12-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.729
+    },
+    {
+      "date": "2025-12-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.6766
+    },
+    {
+      "date": "2025-12-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.3501
+    },
+    {
+      "date": "2025-12-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1508
+    },
+    {
+      "date": "2025-12-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1979
+    },
+    {
+      "date": "2025-12-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.0387
+    },
+    {
+      "date": "2026-01-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0195
+    },
+    {
+      "date": "2026-01-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.0391
+    },
+    {
+      "date": "2026-01-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.7428
+    },
+    {
+      "date": "2026-01-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.6152
+    },
+    {
+      "date": "2026-01-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.3346
+    },
+    {
+      "date": "2026-01-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1589
+    },
+    {
+      "date": "2026-01-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1616
+    },
+    {
+      "date": "2026-01-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.1852
+    },
+    {
+      "date": "2026-02-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0286
+    },
+    {
+      "date": "2026-02-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.0368
+    },
+    {
+      "date": "2026-02-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.8322
+    },
+    {
+      "date": "2026-02-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.5332
+    },
+    {
+      "date": "2026-02-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.3697
+    },
+    {
+      "date": "2026-02-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1453
+    },
+    {
+      "date": "2026-02-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1109
+    },
+    {
+      "date": "2026-02-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.1111
+    },
+    {
+      "date": "2026-03-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0402
+    },
+    {
+      "date": "2026-03-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.0361
+    },
+    {
+      "date": "2026-03-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.7457
+    },
+    {
+      "date": "2026-03-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.5497
+    },
+    {
+      "date": "2026-03-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.3636
+    },
+    {
+      "date": "2026-03-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1234
+    },
+    {
+      "date": "2026-03-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1138
+    },
+    {
+      "date": "2026-03-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 0.7315
+    },
+    {
+      "date": "2026-04-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0499
+    },
+    {
+      "date": "2026-04-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.0432
+    },
+    {
+      "date": "2026-04-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.8579
+    },
+    {
+      "date": "2026-04-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.7171
+    },
+    {
+      "date": "2026-04-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.3635
+    },
+    {
+      "date": "2026-04-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.145
+    },
+    {
+      "date": "2026-04-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1308
+    },
+    {
+      "date": "2026-04-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 1.0979
+    },
+    {
+      "date": "2026-05-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0621
+    },
+    {
+      "date": "2026-05-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.0647
+    },
+    {
+      "date": "2026-05-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.8068
+    },
+    {
+      "date": "2026-05-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.6875
+    },
+    {
+      "date": "2026-05-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.3701
+    },
+    {
+      "date": "2026-05-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1747
+    },
+    {
+      "date": "2026-05-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1475
+    },
+    {
+      "date": "2026-05-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 1.5173
+    },
+    {
+      "date": "2026-06-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0524
+    },
+    {
+      "date": "2026-06-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.0452
+    },
+    {
+      "date": "2026-06-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.7556
+    },
+    {
+      "date": "2026-06-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.5234
+    },
+    {
+      "date": "2026-06-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.3162
+    },
+    {
+      "date": "2026-06-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.159
+    },
+    {
+      "date": "2026-06-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1602
+    },
+    {
+      "date": "2026-06-01",
       "income_quintile": "Q2",
       "major_group_name": "Transportation",
       "contribution_pct_points": 1.072
     },
     {
+      "date": "2026-07-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0538
+    },
+    {
+      "date": "2026-07-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.0535
+    },
+    {
+      "date": "2026-07-01",
       "income_quintile": "Q2",
       "major_group_name": "Food and beverages",
-      "contribution_pct_points": 0.756
+      "contribution_pct_points": 0.7083
     },
     {
-      "income_quintile": "Q3",
+      "date": "2026-07-01",
+      "income_quintile": "Q2",
       "major_group_name": "Housing",
-      "contribution_pct_points": 1.459
+      "contribution_pct_points": 1.4981
     },
     {
-      "income_quintile": "Q3",
+      "date": "2026-07-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2596
+    },
+    {
+      "date": "2026-07-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1479
+    },
+    {
+      "date": "2026-07-01",
+      "income_quintile": "Q2",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1437
+    },
+    {
+      "date": "2026-07-01",
+      "income_quintile": "Q2",
       "major_group_name": "Transportation",
-      "contribution_pct_points": 1.138
+      "contribution_pct_points": 0.9661
     },
     {
+      "date": "2025-02-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0019
+    },
+    {
+      "date": "2025-02-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.0966
+    },
+    {
+      "date": "2025-02-01",
       "income_quintile": "Q3",
       "major_group_name": "Food and beverages",
-      "contribution_pct_points": 0.715
+      "contribution_pct_points": 0.402
     },
     {
-      "income_quintile": "Q4",
+      "date": "2025-02-01",
+      "income_quintile": "Q3",
       "major_group_name": "Housing",
-      "contribution_pct_points": 1.416
+      "contribution_pct_points": 1.8344
     },
     {
-      "income_quintile": "Q4",
+      "date": "2025-02-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2956
+    },
+    {
+      "date": "2025-02-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.101
+    },
+    {
+      "date": "2025-02-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1228
+    },
+    {
+      "date": "2025-02-01",
+      "income_quintile": "Q3",
       "major_group_name": "Transportation",
-      "contribution_pct_points": 1.102
+      "contribution_pct_points": -0.0501
     },
     {
+      "date": "2025-03-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0064
+    },
+    {
+      "date": "2025-03-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.1006
+    },
+    {
+      "date": "2025-03-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.4833
+    },
+    {
+      "date": "2025-03-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.6904
+    },
+    {
+      "date": "2025-03-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2607
+    },
+    {
+      "date": "2025-03-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1249
+    },
+    {
+      "date": "2025-03-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1122
+    },
+    {
+      "date": "2025-03-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.3404
+    },
+    {
+      "date": "2025-04-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": -0.0077
+    },
+    {
+      "date": "2025-04-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.0929
+    },
+    {
+      "date": "2025-04-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.4561
+    },
+    {
+      "date": "2025-04-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.7627
+    },
+    {
+      "date": "2025-04-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2688
+    },
+    {
+      "date": "2025-04-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1193
+    },
+    {
+      "date": "2025-04-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.0964
+    },
+    {
+      "date": "2025-04-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.4316
+    },
+    {
+      "date": "2025-05-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": -0.0131
+    },
+    {
+      "date": "2025-05-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.086
+    },
+    {
+      "date": "2025-05-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.5128
+    },
+    {
+      "date": "2025-05-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.8304
+    },
+    {
+      "date": "2025-05-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2341
+    },
+    {
+      "date": "2025-05-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1101
+    },
+    {
+      "date": "2025-05-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1086
+    },
+    {
+      "date": "2025-05-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.4185
+    },
+    {
+      "date": "2025-06-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": -0.0036
+    },
+    {
+      "date": "2025-06-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.0847
+    },
+    {
+      "date": "2025-06-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.5689
+    },
+    {
+      "date": "2025-06-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.9269
+    },
+    {
+      "date": "2025-06-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2694
+    },
+    {
+      "date": "2025-06-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1156
+    },
+    {
+      "date": "2025-06-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1115
+    },
+    {
+      "date": "2025-06-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.2232
+    },
+    {
+      "date": "2025-07-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0028
+    },
+    {
+      "date": "2025-07-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.0861
+    },
+    {
+      "date": "2025-07-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.5776
+    },
+    {
+      "date": "2025-07-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.7094
+    },
+    {
+      "date": "2025-07-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.3434
+    },
+    {
+      "date": "2025-07-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1284
+    },
+    {
+      "date": "2025-07-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1194
+    },
+    {
+      "date": "2025-07-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.1919
+    },
+    {
+      "date": "2025-08-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0099
+    },
+    {
+      "date": "2025-08-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.0817
+    },
+    {
+      "date": "2025-08-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.6782
+    },
+    {
+      "date": "2025-08-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.72
+    },
+    {
+      "date": "2025-08-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.3369
+    },
+    {
+      "date": "2025-08-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1293
+    },
+    {
+      "date": "2025-08-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1109
+    },
+    {
+      "date": "2025-08-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.0375
+    },
+    {
+      "date": "2025-09-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0092
+    },
+    {
+      "date": "2025-09-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.0684
+    },
+    {
+      "date": "2025-09-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.6823
+    },
+    {
+      "date": "2025-09-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.6413
+    },
+    {
+      "date": "2025-09-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.3263
+    },
+    {
+      "date": "2025-09-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1301
+    },
+    {
+      "date": "2025-09-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1371
+    },
+    {
+      "date": "2025-09-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 0.1639
+    },
+    {
+      "date": "2025-10-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0233
+    },
+    {
+      "date": "2025-10-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.0703
+    },
+    {
+      "date": "2025-10-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.6418
+    },
+    {
+      "date": "2025-10-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.5892
+    },
+    {
+      "date": "2025-10-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.304
+    },
+    {
+      "date": "2025-10-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1173
+    },
+    {
+      "date": "2025-10-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1286
+    },
+    {
+      "date": "2025-10-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 0.0804
+    },
+    {
+      "date": "2025-11-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0011
+    },
+    {
+      "date": "2025-11-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.0935
+    },
+    {
+      "date": "2025-11-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.6038
+    },
+    {
+      "date": "2025-11-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.5594
+    },
+    {
+      "date": "2025-11-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.326
+    },
+    {
+      "date": "2025-11-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.134
+    },
+    {
+      "date": "2025-11-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1038
+    },
+    {
+      "date": "2025-11-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 0.1446
+    },
+    {
+      "date": "2025-12-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0097
+    },
+    {
+      "date": "2025-12-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.0677
+    },
+    {
+      "date": "2025-12-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.6946
+    },
+    {
+      "date": "2025-12-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.5994
+    },
+    {
+      "date": "2025-12-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.3606
+    },
+    {
+      "date": "2025-12-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1384
+    },
+    {
+      "date": "2025-12-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1623
+    },
+    {
+      "date": "2025-12-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.0369
+    },
+    {
+      "date": "2026-01-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.029
+    },
+    {
+      "date": "2026-01-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.0756
+    },
+    {
+      "date": "2026-01-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.7073
+    },
+    {
+      "date": "2026-01-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.547
+    },
+    {
+      "date": "2026-01-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.3556
+    },
+    {
+      "date": "2026-01-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1521
+    },
+    {
+      "date": "2026-01-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1344
+    },
+    {
+      "date": "2026-01-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.1835
+    },
+    {
+      "date": "2026-02-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0399
+    },
+    {
+      "date": "2026-02-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.0733
+    },
+    {
+      "date": "2026-02-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.7922
+    },
+    {
+      "date": "2026-02-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.4683
+    },
+    {
+      "date": "2026-02-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.3945
+    },
+    {
+      "date": "2026-02-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1303
+    },
+    {
+      "date": "2026-02-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.098
+    },
+    {
+      "date": "2026-02-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.1019
+    },
+    {
+      "date": "2026-03-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0476
+    },
+    {
+      "date": "2026-03-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.0723
+    },
+    {
+      "date": "2026-03-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.7116
+    },
+    {
+      "date": "2026-03-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.4943
+    },
+    {
+      "date": "2026-03-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.3834
+    },
+    {
+      "date": "2026-03-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1048
+    },
+    {
+      "date": "2026-03-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1002
+    },
+    {
+      "date": "2026-03-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 0.7768
+    },
+    {
+      "date": "2026-04-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0596
+    },
+    {
+      "date": "2026-04-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.0791
+    },
+    {
+      "date": "2026-04-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.8066
+    },
+    {
+      "date": "2026-04-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.6507
+    },
+    {
+      "date": "2026-04-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.3805
+    },
+    {
+      "date": "2026-04-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1323
+    },
+    {
+      "date": "2026-04-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1134
+    },
+    {
+      "date": "2026-04-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 1.1621
+    },
+    {
+      "date": "2026-05-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0688
+    },
+    {
+      "date": "2026-05-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.0994
+    },
+    {
+      "date": "2026-05-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.7628
+    },
+    {
+      "date": "2026-05-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.6216
+    },
+    {
+      "date": "2026-05-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.3952
+    },
+    {
+      "date": "2026-05-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1634
+    },
+    {
+      "date": "2026-05-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1278
+    },
+    {
+      "date": "2026-05-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 1.5937
+    },
+    {
+      "date": "2026-06-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0583
+    },
+    {
+      "date": "2026-06-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.076
+    },
+    {
+      "date": "2026-06-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.7152
+    },
+    {
+      "date": "2026-06-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.4588
+    },
+    {
+      "date": "2026-06-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.3416
+    },
+    {
+      "date": "2026-06-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1493
+    },
+    {
+      "date": "2026-06-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1367
+    },
+    {
+      "date": "2026-06-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 1.1384
+    },
+    {
+      "date": "2026-07-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0552
+    },
+    {
+      "date": "2026-07-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.0893
+    },
+    {
+      "date": "2026-07-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.6769
+    },
+    {
+      "date": "2026-07-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.424
+    },
+    {
+      "date": "2026-07-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2881
+    },
+    {
+      "date": "2026-07-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1371
+    },
+    {
+      "date": "2026-07-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1225
+    },
+    {
+      "date": "2026-07-01",
+      "income_quintile": "Q3",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 1.0219
+    },
+    {
+      "date": "2025-02-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0023
+    },
+    {
+      "date": "2025-02-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.1196
+    },
+    {
+      "date": "2025-02-01",
       "income_quintile": "Q4",
       "major_group_name": "Food and beverages",
-      "contribution_pct_points": 0.69
+      "contribution_pct_points": 0.4109
     },
     {
-      "income_quintile": "Q5",
+      "date": "2025-02-01",
+      "income_quintile": "Q4",
       "major_group_name": "Housing",
-      "contribution_pct_points": 1.342
+      "contribution_pct_points": 1.9138
     },
     {
-      "income_quintile": "Q5",
+      "date": "2025-02-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2627
+    },
+    {
+      "date": "2025-02-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.065
+    },
+    {
+      "date": "2025-02-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1547
+    },
+    {
+      "date": "2025-02-01",
+      "income_quintile": "Q4",
       "major_group_name": "Transportation",
-      "contribution_pct_points": 0.904
+      "contribution_pct_points": -0.0508
     },
     {
+      "date": "2025-03-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0071
+    },
+    {
+      "date": "2025-03-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.1252
+    },
+    {
+      "date": "2025-03-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.4855
+    },
+    {
+      "date": "2025-03-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.6995
+    },
+    {
+      "date": "2025-03-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2314
+    },
+    {
+      "date": "2025-03-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.0887
+    },
+    {
+      "date": "2025-03-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1519
+    },
+    {
+      "date": "2025-03-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.3297
+    },
+    {
+      "date": "2025-04-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": -0.0063
+    },
+    {
+      "date": "2025-04-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.1177
+    },
+    {
+      "date": "2025-04-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.4626
+    },
+    {
+      "date": "2025-04-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.7663
+    },
+    {
+      "date": "2025-04-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2394
+    },
+    {
+      "date": "2025-04-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.0821
+    },
+    {
+      "date": "2025-04-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1347
+    },
+    {
+      "date": "2025-04-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.4177
+    },
+    {
+      "date": "2025-05-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": -0.0115
+    },
+    {
+      "date": "2025-05-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.1099
+    },
+    {
+      "date": "2025-05-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.514
+    },
+    {
+      "date": "2025-05-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.8189
+    },
+    {
+      "date": "2025-05-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2071
+    },
+    {
+      "date": "2025-05-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.0748
+    },
+    {
+      "date": "2025-05-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1368
+    },
+    {
+      "date": "2025-05-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.4027
+    },
+    {
+      "date": "2025-06-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": -0.0041
+    },
+    {
+      "date": "2025-06-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.1075
+    },
+    {
+      "date": "2025-06-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.5592
+    },
+    {
+      "date": "2025-06-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.8904
+    },
+    {
+      "date": "2025-06-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2395
+    },
+    {
+      "date": "2025-06-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.081
+    },
+    {
+      "date": "2025-06-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1386
+    },
+    {
+      "date": "2025-06-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.215
+    },
+    {
+      "date": "2025-07-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0005
+    },
+    {
+      "date": "2025-07-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.1084
+    },
+    {
+      "date": "2025-07-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.5716
+    },
+    {
+      "date": "2025-07-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.5944
+    },
+    {
+      "date": "2025-07-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.3071
+    },
+    {
+      "date": "2025-07-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.0908
+    },
+    {
+      "date": "2025-07-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1507
+    },
+    {
+      "date": "2025-07-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.179
+    },
+    {
+      "date": "2025-08-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0109
+    },
+    {
+      "date": "2025-08-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.104
+    },
+    {
+      "date": "2025-08-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.6641
+    },
+    {
+      "date": "2025-08-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.6071
+    },
+    {
+      "date": "2025-08-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.3017
+    },
+    {
+      "date": "2025-08-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.0921
+    },
+    {
+      "date": "2025-08-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1429
+    },
+    {
+      "date": "2025-08-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.0329
+    },
+    {
+      "date": "2025-09-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0083
+    },
+    {
+      "date": "2025-09-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.0902
+    },
+    {
+      "date": "2025-09-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.6671
+    },
+    {
+      "date": "2025-09-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.5528
+    },
+    {
+      "date": "2025-09-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2895
+    },
+    {
+      "date": "2025-09-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.0906
+    },
+    {
+      "date": "2025-09-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.172
+    },
+    {
+      "date": "2025-09-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 0.154
+    },
+    {
+      "date": "2025-10-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0234
+    },
+    {
+      "date": "2025-10-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.091
+    },
+    {
+      "date": "2025-10-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.6301
+    },
+    {
+      "date": "2025-10-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.509
+    },
+    {
+      "date": "2025-10-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2693
+    },
+    {
+      "date": "2025-10-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.0815
+    },
+    {
+      "date": "2025-10-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1562
+    },
+    {
+      "date": "2025-10-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 0.0666
+    },
+    {
+      "date": "2025-11-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0031
+    },
+    {
+      "date": "2025-11-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.1117
+    },
+    {
+      "date": "2025-11-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.5984
+    },
+    {
+      "date": "2025-11-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.4391
+    },
+    {
+      "date": "2025-11-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2879
+    },
+    {
+      "date": "2025-11-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.0943
+    },
+    {
+      "date": "2025-11-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1219
+    },
+    {
+      "date": "2025-11-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 0.1199
+    },
+    {
+      "date": "2025-12-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0085
+    },
+    {
+      "date": "2025-12-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.0893
+    },
+    {
+      "date": "2025-12-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.6872
+    },
+    {
+      "date": "2025-12-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.4939
+    },
+    {
+      "date": "2025-12-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.3197
+    },
+    {
+      "date": "2025-12-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.0977
+    },
+    {
+      "date": "2025-12-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1938
+    },
+    {
+      "date": "2025-12-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.0446
+    },
+    {
+      "date": "2026-01-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0255
+    },
+    {
+      "date": "2026-01-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.0955
+    },
+    {
+      "date": "2026-01-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.6966
+    },
+    {
+      "date": "2026-01-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.4337
+    },
+    {
+      "date": "2026-01-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.3163
+    },
+    {
+      "date": "2026-01-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1008
+    },
+    {
+      "date": "2026-01-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1597
+    },
+    {
+      "date": "2026-01-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.1653
+    },
+    {
+      "date": "2026-02-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0356
+    },
+    {
+      "date": "2026-02-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.0936
+    },
+    {
+      "date": "2026-02-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.7647
+    },
+    {
+      "date": "2026-02-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.3779
+    },
+    {
+      "date": "2026-02-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.3501
+    },
+    {
+      "date": "2026-02-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.0847
+    },
+    {
+      "date": "2026-02-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1252
+    },
+    {
+      "date": "2026-02-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.0789
+    },
+    {
+      "date": "2026-03-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.043
+    },
+    {
+      "date": "2026-03-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.0922
+    },
+    {
+      "date": "2026-03-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.6895
+    },
+    {
+      "date": "2026-03-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.4277
+    },
+    {
+      "date": "2026-03-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.3429
+    },
+    {
+      "date": "2026-03-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.0655
+    },
+    {
+      "date": "2026-03-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1194
+    },
+    {
+      "date": "2026-03-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 0.7495
+    },
+    {
+      "date": "2026-04-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.055
+    },
+    {
+      "date": "2026-04-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.0995
+    },
+    {
+      "date": "2026-04-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.7725
+    },
+    {
+      "date": "2026-04-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.5814
+    },
+    {
+      "date": "2026-04-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.3433
+    },
+    {
+      "date": "2026-04-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.0884
+    },
+    {
+      "date": "2026-04-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1295
+    },
+    {
+      "date": "2026-04-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 1.1133
+    },
+    {
+      "date": "2026-05-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0638
+    },
+    {
+      "date": "2026-05-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.1163
+    },
+    {
+      "date": "2026-05-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.7315
+    },
+    {
+      "date": "2026-05-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.5586
+    },
+    {
+      "date": "2026-05-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.3588
+    },
+    {
+      "date": "2026-05-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.117
+    },
+    {
+      "date": "2026-05-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1547
+    },
+    {
+      "date": "2026-05-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 1.5226
+    },
+    {
+      "date": "2026-06-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0527
+    },
+    {
+      "date": "2026-06-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.0943
+    },
+    {
+      "date": "2026-06-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.6903
+    },
+    {
+      "date": "2026-06-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.4157
+    },
+    {
+      "date": "2026-06-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.3089
+    },
+    {
+      "date": "2026-06-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.1082
+    },
+    {
+      "date": "2026-06-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1639
+    },
+    {
+      "date": "2026-06-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 1.1023
+    },
+    {
+      "date": "2026-07-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0517
+    },
+    {
+      "date": "2026-07-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.1077
+    },
+    {
+      "date": "2026-07-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.6539
+    },
+    {
+      "date": "2026-07-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.3736
+    },
+    {
+      "date": "2026-07-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2596
+    },
+    {
+      "date": "2026-07-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.0987
+    },
+    {
+      "date": "2026-07-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1385
+    },
+    {
+      "date": "2026-07-01",
+      "income_quintile": "Q4",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 0.9918
+    },
+    {
+      "date": "2025-02-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.005
+    },
+    {
+      "date": "2025-02-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.2603
+    },
+    {
+      "date": "2025-02-01",
       "income_quintile": "Q5",
       "major_group_name": "Food and beverages",
-      "contribution_pct_points": 0.587
+      "contribution_pct_points": 0.3599
+    },
+    {
+      "date": "2025-02-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.9283
+    },
+    {
+      "date": "2025-02-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2087
+    },
+    {
+      "date": "2025-02-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.033
+    },
+    {
+      "date": "2025-02-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.2063
+    },
+    {
+      "date": "2025-02-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.0291
+    },
+    {
+      "date": "2025-03-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0089
+    },
+    {
+      "date": "2025-03-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.2754
+    },
+    {
+      "date": "2025-03-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.4203
+    },
+    {
+      "date": "2025-03-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.6606
+    },
+    {
+      "date": "2025-03-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.1827
+    },
+    {
+      "date": "2025-03-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.0613
+    },
+    {
+      "date": "2025-03-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.2083
+    },
+    {
+      "date": "2025-03-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.2463
+    },
+    {
+      "date": "2025-04-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": -0.0058
+    },
+    {
+      "date": "2025-04-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.266
+    },
+    {
+      "date": "2025-04-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.4047
+    },
+    {
+      "date": "2025-04-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.7218
+    },
+    {
+      "date": "2025-04-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.1916
+    },
+    {
+      "date": "2025-04-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.0542
+    },
+    {
+      "date": "2025-04-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1883
+    },
+    {
+      "date": "2025-04-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.3137
+    },
+    {
+      "date": "2025-05-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": -0.0116
+    },
+    {
+      "date": "2025-05-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.246
+    },
+    {
+      "date": "2025-05-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.4436
+    },
+    {
+      "date": "2025-05-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.7777
+    },
+    {
+      "date": "2025-05-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.1654
+    },
+    {
+      "date": "2025-05-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.0482
+    },
+    {
+      "date": "2025-05-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1796
+    },
+    {
+      "date": "2025-05-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.2946
+    },
+    {
+      "date": "2025-06-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": -0.0031
+    },
+    {
+      "date": "2025-06-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.2387
+    },
+    {
+      "date": "2025-06-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.4832
+    },
+    {
+      "date": "2025-06-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.8281
+    },
+    {
+      "date": "2025-06-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.1918
+    },
+    {
+      "date": "2025-06-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.0557
+    },
+    {
+      "date": "2025-06-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1862
+    },
+    {
+      "date": "2025-06-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.1457
+    },
+    {
+      "date": "2025-07-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0039
+    },
+    {
+      "date": "2025-07-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.2336
+    },
+    {
+      "date": "2025-07-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.4942
+    },
+    {
+      "date": "2025-07-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.4824
+    },
+    {
+      "date": "2025-07-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2449
+    },
+    {
+      "date": "2025-07-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.0653
+    },
+    {
+      "date": "2025-07-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.2018
+    },
+    {
+      "date": "2025-07-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.0874
+    },
+    {
+      "date": "2025-08-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0148
+    },
+    {
+      "date": "2025-08-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.2318
+    },
+    {
+      "date": "2025-08-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.5731
+    },
+    {
+      "date": "2025-08-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.4834
+    },
+    {
+      "date": "2025-08-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2403
+    },
+    {
+      "date": "2025-08-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.0661
+    },
+    {
+      "date": "2025-08-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1946
+    },
+    {
+      "date": "2025-08-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 0.0315
+    },
+    {
+      "date": "2025-09-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0101
+    },
+    {
+      "date": "2025-09-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.2012
+    },
+    {
+      "date": "2025-09-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.5684
+    },
+    {
+      "date": "2025-09-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.4525
+    },
+    {
+      "date": "2025-09-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2276
+    },
+    {
+      "date": "2025-09-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.059
+    },
+    {
+      "date": "2025-09-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.2338
+    },
+    {
+      "date": "2025-09-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 0.1553
+    },
+    {
+      "date": "2025-10-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0258
+    },
+    {
+      "date": "2025-10-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.1979
+    },
+    {
+      "date": "2025-10-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.534
+    },
+    {
+      "date": "2025-10-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.4162
+    },
+    {
+      "date": "2025-10-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2129
+    },
+    {
+      "date": "2025-10-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.0527
+    },
+    {
+      "date": "2025-10-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.204
+    },
+    {
+      "date": "2025-10-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 0.0675
+    },
+    {
+      "date": "2025-11-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0032
+    },
+    {
+      "date": "2025-11-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.2233
+    },
+    {
+      "date": "2025-11-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.513
+    },
+    {
+      "date": "2025-11-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.3155
+    },
+    {
+      "date": "2025-11-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2263
+    },
+    {
+      "date": "2025-11-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.0641
+    },
+    {
+      "date": "2025-11-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.154
+    },
+    {
+      "date": "2025-11-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 0.088
+    },
+    {
+      "date": "2025-12-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0089
+    },
+    {
+      "date": "2025-12-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.2063
+    },
+    {
+      "date": "2025-12-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.5873
+    },
+    {
+      "date": "2025-12-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.3799
+    },
+    {
+      "date": "2025-12-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2505
+    },
+    {
+      "date": "2025-12-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.066
+    },
+    {
+      "date": "2025-12-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.2358
+    },
+    {
+      "date": "2025-12-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.0301
+    },
+    {
+      "date": "2026-01-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0271
+    },
+    {
+      "date": "2026-01-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.2198
+    },
+    {
+      "date": "2026-01-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.5913
+    },
+    {
+      "date": "2026-01-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.3276
+    },
+    {
+      "date": "2026-01-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2489
+    },
+    {
+      "date": "2026-01-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.0574
+    },
+    {
+      "date": "2026-01-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1977
+    },
+    {
+      "date": "2026-01-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.0953
+    },
+    {
+      "date": "2026-02-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0392
+    },
+    {
+      "date": "2026-02-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.2169
+    },
+    {
+      "date": "2026-02-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.6509
+    },
+    {
+      "date": "2026-02-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.287
+    },
+    {
+      "date": "2026-02-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2758
+    },
+    {
+      "date": "2026-02-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.044
+    },
+    {
+      "date": "2026-02-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1695
+    },
+    {
+      "date": "2026-02-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": -0.0131
+    },
+    {
+      "date": "2026-03-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0481
+    },
+    {
+      "date": "2026-03-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.2088
+    },
+    {
+      "date": "2026-03-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.5953
+    },
+    {
+      "date": "2026-03-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.3472
+    },
+    {
+      "date": "2026-03-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2716
+    },
+    {
+      "date": "2026-03-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.0261
+    },
+    {
+      "date": "2026-03-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1554
+    },
+    {
+      "date": "2026-03-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 0.6034
+    },
+    {
+      "date": "2026-04-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0605
+    },
+    {
+      "date": "2026-04-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.2157
+    },
+    {
+      "date": "2026-04-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.6544
+    },
+    {
+      "date": "2026-04-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.4904
+    },
+    {
+      "date": "2026-04-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2786
+    },
+    {
+      "date": "2026-04-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.0507
+    },
+    {
+      "date": "2026-04-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1596
+    },
+    {
+      "date": "2026-04-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 0.8843
+    },
+    {
+      "date": "2026-05-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0702
+    },
+    {
+      "date": "2026-05-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.2161
+    },
+    {
+      "date": "2026-05-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.6231
+    },
+    {
+      "date": "2026-05-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.4594
+    },
+    {
+      "date": "2026-05-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2919
+    },
+    {
+      "date": "2026-05-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.0834
+    },
+    {
+      "date": "2026-05-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1959
+    },
+    {
+      "date": "2026-05-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 1.1929
+    },
+    {
+      "date": "2026-06-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0571
+    },
+    {
+      "date": "2026-06-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.19
+    },
+    {
+      "date": "2026-06-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.5867
+    },
+    {
+      "date": "2026-06-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.3419
+    },
+    {
+      "date": "2026-06-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.251
+    },
+    {
+      "date": "2026-06-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.0781
+    },
+    {
+      "date": "2026-06-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.2018
+    },
+    {
+      "date": "2026-06-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 0.9041
+    },
+    {
+      "date": "2026-07-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Apparel",
+      "contribution_pct_points": 0.0559
+    },
+    {
+      "date": "2026-07-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Education and communication",
+      "contribution_pct_points": 0.217
+    },
+    {
+      "date": "2026-07-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Food and beverages",
+      "contribution_pct_points": 0.5593
+    },
+    {
+      "date": "2026-07-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Housing",
+      "contribution_pct_points": 1.2846
+    },
+    {
+      "date": "2026-07-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Medical care",
+      "contribution_pct_points": 0.2105
+    },
+    {
+      "date": "2026-07-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Other goods and services",
+      "contribution_pct_points": 0.0672
+    },
+    {
+      "date": "2026-07-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Recreation",
+      "contribution_pct_points": 0.1618
+    },
+    {
+      "date": "2026-07-01",
+      "income_quintile": "Q5",
+      "major_group_name": "Transportation",
+      "contribution_pct_points": 0.8119
+    }
+  ],
+  "category_weights": [
+    {
+      "year": 2024,
+      "income_quintile": "Q1",
+      "major_group_name": "Housing",
+      "category_weight_pct": 47.156
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q1",
+      "major_group_name": "Food and beverages",
+      "category_weight_pct": 20.13
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q1",
+      "major_group_name": "Transportation",
+      "category_weight_pct": 8.139
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q1",
+      "major_group_name": "Medical care",
+      "category_weight_pct": 7.588
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q1",
+      "major_group_name": "Education and communication",
+      "category_weight_pct": 6.408
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q1",
+      "major_group_name": "Recreation",
+      "category_weight_pct": 4.178
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q1",
+      "major_group_name": "Apparel",
+      "category_weight_pct": 3.557
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q1",
+      "major_group_name": "Other goods and services",
+      "category_weight_pct": 2.844
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q2",
+      "major_group_name": "Housing",
+      "category_weight_pct": 44.789
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q2",
+      "major_group_name": "Food and beverages",
+      "category_weight_pct": 20.451
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q2",
+      "major_group_name": "Transportation",
+      "category_weight_pct": 10.105
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q2",
+      "major_group_name": "Medical care",
+      "category_weight_pct": 8.341
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q2",
+      "major_group_name": "Education and communication",
+      "category_weight_pct": 5.52
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q2",
+      "major_group_name": "Recreation",
+      "category_weight_pct": 4.854
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q2",
+      "major_group_name": "Apparel",
+      "category_weight_pct": 3.193
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q2",
+      "major_group_name": "Other goods and services",
+      "category_weight_pct": 2.747
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q3",
+      "major_group_name": "Housing",
+      "category_weight_pct": 44.094
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q3",
+      "major_group_name": "Food and beverages",
+      "category_weight_pct": 19.924
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q3",
+      "major_group_name": "Transportation",
+      "category_weight_pct": 11.082
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q3",
+      "major_group_name": "Medical care",
+      "category_weight_pct": 8.139
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q3",
+      "major_group_name": "Education and communication",
+      "category_weight_pct": 6.302
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q3",
+      "major_group_name": "Recreation",
+      "category_weight_pct": 4.557
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q3",
+      "major_group_name": "Apparel",
+      "category_weight_pct": 3.162
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q3",
+      "major_group_name": "Other goods and services",
+      "category_weight_pct": 2.74
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q4",
+      "major_group_name": "Housing",
+      "category_weight_pct": 44.573
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q4",
+      "major_group_name": "Food and beverages",
+      "category_weight_pct": 19.889
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q4",
+      "major_group_name": "Transportation",
+      "category_weight_pct": 11.503
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q4",
+      "major_group_name": "Medical care",
+      "category_weight_pct": 7.338
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q4",
+      "major_group_name": "Education and communication",
+      "category_weight_pct": 6.075
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q4",
+      "major_group_name": "Recreation",
+      "category_weight_pct": 4.953
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q4",
+      "major_group_name": "Apparel",
+      "category_weight_pct": 3.011
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q4",
+      "major_group_name": "Other goods and services",
+      "category_weight_pct": 2.657
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q5",
+      "major_group_name": "Housing",
+      "category_weight_pct": 44.435
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q5",
+      "major_group_name": "Food and beverages",
+      "category_weight_pct": 18.261
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q5",
+      "major_group_name": "Transportation",
+      "category_weight_pct": 11.906
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q5",
+      "major_group_name": "Medical care",
+      "category_weight_pct": 6.696
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q5",
+      "major_group_name": "Education and communication",
+      "category_weight_pct": 6.291
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q5",
+      "major_group_name": "Recreation",
+      "category_weight_pct": 6.241
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q5",
+      "major_group_name": "Apparel",
+      "category_weight_pct": 3.599
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q5",
+      "major_group_name": "Other goods and services",
+      "category_weight_pct": 2.57
     }
   ],
   "validation": {
@@ -1188,7 +5752,7 @@
     "weight_share_sum_max_by_quintile": "1.0",
     "unmatched_unique_ucc": "33",
     "unmatched_weighted_spend": "67868827980.41908",
-    "joined_rows_with_prices": "449820",
+    "joined_rows_with_prices": "368740",
     "joined_unique_cpi_items": "177",
     "first_price_year": "1984",
     "last_price_year": "2026"
@@ -1196,23 +5760,23 @@
   "sources": [
     {
       "path": "data\\processed_bls_series\\monthly_cpi_item_prices.csv",
-      "modified": "2026-08-05 10:47:33",
-      "bytes": 19692028
+      "modified": "2026-08-15 09:44:30",
+      "bytes": 19313597
     },
     {
       "path": "intermediate\\US\\income_quintile_dcpi\\2024_sas_filtered_ce_source\\income_quintile_dcpi_monthly.csv",
-      "modified": "2026-08-12 09:21:56",
-      "bytes": 187245
+      "modified": "2026-08-15 09:44:50",
+      "bytes": 186851
     },
     {
       "path": "intermediate\\US\\real_wage_nowcast\\atlanta_wgt\\atlanta_wgt_real_wage_nowcast.csv",
-      "modified": "2026-08-12 09:23:06",
-      "bytes": 209137
+      "modified": "2026-08-15 09:45:38",
+      "bytes": 209850
     },
     {
       "path": "data\\raw\\atlanta_fed\\wage-growth-data.xlsx",
-      "modified": "2026-08-05 11:45:38",
-      "bytes": 334497
+      "modified": "2026-08-15 09:44:31",
+      "bytes": 335360
     },
     {
       "path": "outputs\\master_xwalk_codex_filled\\master_ucc_eli_cpi_xwalk_recreated_v2.xlsx",
@@ -1221,17 +5785,22 @@
     },
     {
       "path": "intermediate\\US\\real_wage_nowcast\\atlanta_wgt\\wage_quartile_to_dcpi_quintile_mapping.csv",
-      "modified": "2026-08-12 09:23:06",
+      "modified": "2026-08-15 09:45:38",
       "bytes": 142
     },
     {
       "path": "intermediate\\US\\income_quintile_dcpi\\2024_sas_filtered_ce_source\\income_quintile_dcpi_item_contributions.csv",
-      "modified": "2026-08-12 09:21:59",
-      "bytes": 46618406
+      "modified": "2026-08-15 09:44:52",
+      "bytes": 38910825
+    },
+    {
+      "path": "intermediate\\US\\income_quintile_dcpi\\2024_sas_filtered_ce_source\\income_quintile_category_weights.csv",
+      "modified": "2026-08-15 09:44:48",
+      "bytes": 2599
     },
     {
       "path": "intermediate\\US\\income_quintile_dcpi\\2024_sas_filtered_ce_source\\validation_summary.csv",
-      "modified": "2026-08-12 09:21:53",
+      "modified": "2026-08-15 09:44:48",
       "bytes": 474
     }
   ]
