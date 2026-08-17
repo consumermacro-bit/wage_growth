@@ -15,7 +15,7 @@ Raw CEX files and local intermediate analysis files should stay in the main DCPI
 From the main DCPI project folder:
 
 ```powershell
-.\scripts\refresh_export_and_push_dashboard.ps1 -RemoteUrl "https://github.com/YOUR-USER/YOUR-REPO.git"
+.\scripts\refresh_export_and_push_dashboard.ps1 -RemoteUrl "https://github.com/consumermacro-bit/wage_growth.git"
 ```
 
 Use this after your local GitHub authentication is already set up. Do not paste GitHub passwords or personal access tokens into chat.
@@ -23,7 +23,7 @@ Use this after your local GitHub authentication is already set up. Do not paste 
 If CPI and Atlanta Fed WGT files have already been refreshed locally and you only want to rebuild from local inputs:
 
 ```powershell
-.\scripts\refresh_export_and_push_dashboard.ps1 -SkipDownloads -RemoteUrl "https://github.com/YOUR-USER/YOUR-REPO.git"
+.\scripts\refresh_export_and_push_dashboard.ps1 -SkipDownloads -RemoteUrl "https://github.com/consumermacro-bit/wage_growth.git"
 ```
 
 ## GitHub Pages
