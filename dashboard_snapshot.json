@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T20:07:12.503196+00:00",
+  "generated_at": "2026-08-20T19:53:34.420625+00:00",
   "latest": {
     "price_month": "2026-07-01",
     "price_rows": 205,
@@ -10,6 +10,10 @@
     "avg_real_wage_pct": 0.168,
     "best_real_wage_quartile": "WQ4",
     "worst_real_wage_quartile": "WQ1",
+    "h3_benchmark_year": 2024,
+    "avg_real_household_income_growth_pct": 1.797,
+    "best_h3_income_quintile": "Q5",
+    "worst_h3_income_quintile": "Q2",
     "xwalk_name": "master_ucc_eli_cpi_xwalk_recreated_v2.xlsx"
   },
   "dcpi_latest": [
@@ -1174,6 +1178,450 @@
       "income_quintile": "Q5",
       "major_group_name": "Food and beverages",
       "contribution_pct_points": 0.559
+    }
+  ],
+  "h3_benchmark_latest": [
+    {
+      "year": 2024,
+      "income_quintile": "Q1",
+      "nominal_household_income": 18460,
+      "nominal_income_growth_pct": 4.5892,
+      "dcpi_inflation_pct": 3.0762,
+      "real_income_growth_pct": 1.4679
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q2",
+      "nominal_household_income": 49380,
+      "nominal_income_growth_pct": 3.7613,
+      "dcpi_inflation_pct": 3.0409,
+      "real_income_growth_pct": 0.6991
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q3",
+      "nominal_household_income": 84390,
+      "nominal_income_growth_pct": 4.5336,
+      "dcpi_inflation_pct": 3.0369,
+      "real_income_growth_pct": 1.4527
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q4",
+      "nominal_household_income": 136800,
+      "nominal_income_growth_pct": 5.7187,
+      "dcpi_inflation_pct": 3.1672,
+      "real_income_growth_pct": 2.4732
+    },
+    {
+      "year": 2024,
+      "income_quintile": "Q5",
+      "nominal_household_income": 316100,
+      "nominal_income_growth_pct": 6.3236,
+      "dcpi_inflation_pct": 3.333,
+      "real_income_growth_pct": 2.8941
+    }
+  ],
+  "h3_benchmark_recent": [
+    {
+      "date": "2015-12-01",
+      "year": 2015,
+      "income_quintile": "Q1",
+      "nominal_income_growth_pct": 6.6781,
+      "dcpi_inflation_pct": 0.7307,
+      "real_income_growth_pct": 5.9043
+    },
+    {
+      "date": "2015-12-01",
+      "year": 2015,
+      "income_quintile": "Q2",
+      "nominal_income_growth_pct": 4.9534,
+      "dcpi_inflation_pct": 0.603,
+      "real_income_growth_pct": 4.3242
+    },
+    {
+      "date": "2015-12-01",
+      "year": 2015,
+      "income_quintile": "Q3",
+      "nominal_income_growth_pct": 5.1628,
+      "dcpi_inflation_pct": 0.645,
+      "real_income_growth_pct": 4.4889
+    },
+    {
+      "date": "2015-12-01",
+      "year": 2015,
+      "income_quintile": "Q4",
+      "nominal_income_growth_pct": 4.782,
+      "dcpi_inflation_pct": 0.7733,
+      "real_income_growth_pct": 3.9779
+    },
+    {
+      "date": "2015-12-01",
+      "year": 2015,
+      "income_quintile": "Q5",
+      "nominal_income_growth_pct": 4.2761,
+      "dcpi_inflation_pct": 1.1899,
+      "real_income_growth_pct": 3.05
+    },
+    {
+      "date": "2016-12-01",
+      "year": 2016,
+      "income_quintile": "Q1",
+      "nominal_income_growth_pct": 3.8523,
+      "dcpi_inflation_pct": 2.0803,
+      "real_income_growth_pct": 1.7359
+    },
+    {
+      "date": "2016-12-01",
+      "year": 2016,
+      "income_quintile": "Q2",
+      "nominal_income_growth_pct": 5.7309,
+      "dcpi_inflation_pct": 2.1472,
+      "real_income_growth_pct": 3.5084
+    },
+    {
+      "date": "2016-12-01",
+      "year": 2016,
+      "income_quintile": "Q3",
+      "nominal_income_growth_pct": 4.0824,
+      "dcpi_inflation_pct": 2.1531,
+      "real_income_growth_pct": 1.8885
+    },
+    {
+      "date": "2016-12-01",
+      "year": 2016,
+      "income_quintile": "Q4",
+      "nominal_income_growth_pct": 3.4228,
+      "dcpi_inflation_pct": 2.2337,
+      "real_income_growth_pct": 1.1632
+    },
+    {
+      "date": "2016-12-01",
+      "year": 2016,
+      "income_quintile": "Q5",
+      "nominal_income_growth_pct": 5.6818,
+      "dcpi_inflation_pct": 2.3061,
+      "real_income_growth_pct": 3.2996
+    },
+    {
+      "date": "2017-12-01",
+      "year": 2017,
+      "income_quintile": "Q1",
+      "nominal_income_growth_pct": 3.0139,
+      "dcpi_inflation_pct": 2.2784,
+      "real_income_growth_pct": 0.7191
+    },
+    {
+      "date": "2017-12-01",
+      "year": 2017,
+      "income_quintile": "Q2",
+      "nominal_income_growth_pct": 2.8986,
+      "dcpi_inflation_pct": 2.3264,
+      "real_income_growth_pct": 0.5591
+    },
+    {
+      "date": "2017-12-01",
+      "year": 2017,
+      "income_quintile": "Q3",
+      "nominal_income_growth_pct": 3.7194,
+      "dcpi_inflation_pct": 2.3083,
+      "real_income_growth_pct": 1.3792
+    },
+    {
+      "date": "2017-12-01",
+      "year": 2017,
+      "income_quintile": "Q4",
+      "nominal_income_growth_pct": 4.024,
+      "dcpi_inflation_pct": 2.3137,
+      "real_income_growth_pct": 1.6716
+    },
+    {
+      "date": "2017-12-01",
+      "year": 2017,
+      "income_quintile": "Q5",
+      "nominal_income_growth_pct": 7.0594,
+      "dcpi_inflation_pct": 2.2964,
+      "real_income_growth_pct": 4.6561
+    },
+    {
+      "date": "2018-12-01",
+      "year": 2018,
+      "income_quintile": "Q1",
+      "nominal_income_growth_pct": 3.3758,
+      "dcpi_inflation_pct": 2.09,
+      "real_income_growth_pct": 1.2595
+    },
+    {
+      "date": "2018-12-01",
+      "year": 2018,
+      "income_quintile": "Q2",
+      "nominal_income_growth_pct": 5.0423,
+      "dcpi_inflation_pct": 2.0586,
+      "real_income_growth_pct": 2.9234
+    },
+    {
+      "date": "2018-12-01",
+      "year": 2018,
+      "income_quintile": "Q3",
+      "nominal_income_growth_pct": 3.6186,
+      "dcpi_inflation_pct": 2.1124,
+      "real_income_growth_pct": 1.4751
+    },
+    {
+      "date": "2018-12-01",
+      "year": 2018,
+      "income_quintile": "Q4",
+      "nominal_income_growth_pct": 2.6159,
+      "dcpi_inflation_pct": 2.1863,
+      "real_income_growth_pct": 0.4204
+    },
+    {
+      "date": "2018-12-01",
+      "year": 2018,
+      "income_quintile": "Q5",
+      "nominal_income_growth_pct": 2.1397,
+      "dcpi_inflation_pct": 2.3332,
+      "real_income_growth_pct": -0.189
+    },
+    {
+      "date": "2019-12-01",
+      "year": 2019,
+      "income_quintile": "Q1",
+      "nominal_income_growth_pct": 10.9579,
+      "dcpi_inflation_pct": 2.284,
+      "real_income_growth_pct": 8.4803
+    },
+    {
+      "date": "2019-12-01",
+      "year": 2019,
+      "income_quintile": "Q2",
+      "nominal_income_growth_pct": 9.0105,
+      "dcpi_inflation_pct": 2.3754,
+      "real_income_growth_pct": 6.4811
+    },
+    {
+      "date": "2019-12-01",
+      "year": 2019,
+      "income_quintile": "Q3",
+      "nominal_income_growth_pct": 8.4474,
+      "dcpi_inflation_pct": 2.3733,
+      "real_income_growth_pct": 5.9332
+    },
+    {
+      "date": "2019-12-01",
+      "year": 2019,
+      "income_quintile": "Q4",
+      "nominal_income_growth_pct": 9.3504,
+      "dcpi_inflation_pct": 2.4878,
+      "real_income_growth_pct": 6.696
+    },
+    {
+      "date": "2019-12-01",
+      "year": 2019,
+      "income_quintile": "Q5",
+      "nominal_income_growth_pct": 8.7644,
+      "dcpi_inflation_pct": 2.5101,
+      "real_income_growth_pct": 6.1012
+    },
+    {
+      "date": "2020-12-01",
+      "year": 2020,
+      "income_quintile": "Q1",
+      "nominal_income_growth_pct": -4.0549,
+      "dcpi_inflation_pct": 1.5153,
+      "real_income_growth_pct": -5.4871
+    },
+    {
+      "date": "2020-12-01",
+      "year": 2020,
+      "income_quintile": "Q2",
+      "nominal_income_growth_pct": -2.2386,
+      "dcpi_inflation_pct": 1.4947,
+      "real_income_growth_pct": -3.6783
+    },
+    {
+      "date": "2020-12-01",
+      "year": 2020,
+      "income_quintile": "Q3",
+      "nominal_income_growth_pct": -1.0299,
+      "dcpi_inflation_pct": 1.3937,
+      "real_income_growth_pct": -2.3902
+    },
+    {
+      "date": "2020-12-01",
+      "year": 2020,
+      "income_quintile": "Q4",
+      "nominal_income_growth_pct": -0.7201,
+      "dcpi_inflation_pct": 1.2498,
+      "real_income_growth_pct": -1.9455
+    },
+    {
+      "date": "2020-12-01",
+      "year": 2020,
+      "income_quintile": "Q5",
+      "nominal_income_growth_pct": 0.0,
+      "dcpi_inflation_pct": 1.1288,
+      "real_income_growth_pct": -1.1162
+    },
+    {
+      "date": "2021-12-01",
+      "year": 2021,
+      "income_quintile": "Q1",
+      "nominal_income_growth_pct": 1.2952,
+      "dcpi_inflation_pct": 6.119,
+      "real_income_growth_pct": -4.5457
+    },
+    {
+      "date": "2021-12-01",
+      "year": 2021,
+      "income_quintile": "Q2",
+      "nominal_income_growth_pct": 3.2209,
+      "dcpi_inflation_pct": 6.6446,
+      "real_income_growth_pct": -3.2103
+    },
+    {
+      "date": "2021-12-01",
+      "year": 2021,
+      "income_quintile": "Q3",
+      "nominal_income_growth_pct": 3.8839,
+      "dcpi_inflation_pct": 6.7134,
+      "real_income_growth_pct": -2.6515
+    },
+    {
+      "date": "2021-12-01",
+      "year": 2021,
+      "income_quintile": "Q4",
+      "nominal_income_growth_pct": 4.7144,
+      "dcpi_inflation_pct": 6.6411,
+      "real_income_growth_pct": -1.8067
+    },
+    {
+      "date": "2021-12-01",
+      "year": 2021,
+      "income_quintile": "Q5",
+      "nominal_income_growth_pct": 5.8962,
+      "dcpi_inflation_pct": 6.1426,
+      "real_income_growth_pct": -0.2321
+    },
+    {
+      "date": "2022-12-01",
+      "year": 2022,
+      "income_quintile": "Q1",
+      "nominal_income_growth_pct": 8.4791,
+      "dcpi_inflation_pct": 7.2733,
+      "real_income_growth_pct": 1.1241
+    },
+    {
+      "date": "2022-12-01",
+      "year": 2022,
+      "income_quintile": "Q2",
+      "nominal_income_growth_pct": 6.8747,
+      "dcpi_inflation_pct": 7.125,
+      "real_income_growth_pct": -0.2337
+    },
+    {
+      "date": "2022-12-01",
+      "year": 2022,
+      "income_quintile": "Q3",
+      "nominal_income_growth_pct": 5.4317,
+      "dcpi_inflation_pct": 7.0435,
+      "real_income_growth_pct": -1.5057
+    },
+    {
+      "date": "2022-12-01",
+      "year": 2022,
+      "income_quintile": "Q4",
+      "nominal_income_growth_pct": 3.8095,
+      "dcpi_inflation_pct": 7.0665,
+      "real_income_growth_pct": -3.042
+    },
+    {
+      "date": "2022-12-01",
+      "year": 2022,
+      "income_quintile": "Q5",
+      "nominal_income_growth_pct": 2.9324,
+      "dcpi_inflation_pct": 7.0153,
+      "real_income_growth_pct": -3.8153
+    },
+    {
+      "date": "2023-12-01",
+      "year": 2023,
+      "income_quintile": "Q1",
+      "nominal_income_growth_pct": 9.4913,
+      "dcpi_inflation_pct": 4.5304,
+      "real_income_growth_pct": 4.7459
+    },
+    {
+      "date": "2023-12-01",
+      "year": 2023,
+      "income_quintile": "Q2",
+      "nominal_income_growth_pct": 8.5538,
+      "dcpi_inflation_pct": 4.5493,
+      "real_income_growth_pct": 3.8303
+    },
+    {
+      "date": "2023-12-01",
+      "year": 2023,
+      "income_quintile": "Q3",
+      "nominal_income_growth_pct": 8.0289,
+      "dcpi_inflation_pct": 4.5738,
+      "real_income_growth_pct": 3.304
+    },
+    {
+      "date": "2023-12-01",
+      "year": 2023,
+      "income_quintile": "Q4",
+      "nominal_income_growth_pct": 7.9233,
+      "dcpi_inflation_pct": 4.9679,
+      "real_income_growth_pct": 2.8155
+    },
+    {
+      "date": "2023-12-01",
+      "year": 2023,
+      "income_quintile": "Q5",
+      "nominal_income_growth_pct": 7.2124,
+      "dcpi_inflation_pct": 5.2919,
+      "real_income_growth_pct": 1.824
+    },
+    {
+      "date": "2024-12-01",
+      "year": 2024,
+      "income_quintile": "Q1",
+      "nominal_income_growth_pct": 4.5892,
+      "dcpi_inflation_pct": 3.0762,
+      "real_income_growth_pct": 1.4679
+    },
+    {
+      "date": "2024-12-01",
+      "year": 2024,
+      "income_quintile": "Q2",
+      "nominal_income_growth_pct": 3.7613,
+      "dcpi_inflation_pct": 3.0409,
+      "real_income_growth_pct": 0.6991
+    },
+    {
+      "date": "2024-12-01",
+      "year": 2024,
+      "income_quintile": "Q3",
+      "nominal_income_growth_pct": 4.5336,
+      "dcpi_inflation_pct": 3.0369,
+      "real_income_growth_pct": 1.4527
+    },
+    {
+      "date": "2024-12-01",
+      "year": 2024,
+      "income_quintile": "Q4",
+      "nominal_income_growth_pct": 5.7187,
+      "dcpi_inflation_pct": 3.1672,
+      "real_income_growth_pct": 2.4732
+    },
+    {
+      "date": "2024-12-01",
+      "year": 2024,
+      "income_quintile": "Q5",
+      "nominal_income_growth_pct": 6.3236,
+      "dcpi_inflation_pct": 3.333,
+      "real_income_growth_pct": 2.8941
     }
   ],
   "decomposition_recent": [
@@ -5802,6 +6250,16 @@
       "path": "intermediate\\US\\income_quintile_dcpi\\2024_sas_filtered_ce_source\\validation_summary.csv",
       "modified": "2026-08-15 09:44:48",
       "bytes": 474
+    },
+    {
+      "path": "intermediate\\US\\real_income_growth\\real_income_growth_by_quintile.csv",
+      "modified": "2026-08-19 15:56:22",
+      "bytes": 30846
+    },
+    {
+      "path": "data\\raw\\census_h3\\h03ar.xlsx",
+      "modified": "2026-08-19 15:55:10",
+      "bytes": 12801
     }
   ]
 }
