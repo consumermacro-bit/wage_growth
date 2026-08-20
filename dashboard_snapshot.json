@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T20:08:35.726725+00:00",
+  "generated_at": "2026-08-20T20:48:38.727058+00:00",
   "latest": {
     "price_month": "2026-07-01",
     "price_rows": 205,
@@ -14,6 +14,8 @@
     "avg_real_household_income_growth_pct": 1.797,
     "best_h3_income_quintile": "Q5",
     "worst_h3_income_quintile": "Q2",
+    "comparison_start_year": 2015,
+    "comparison_end_year": 2024,
     "xwalk_name": "master_ucc_eli_cpi_xwalk_recreated_v2.xlsx"
   },
   "dcpi_latest": [
@@ -1101,6 +1103,288 @@
       "nominal_wage_growth_12mo_pct": 3.8,
       "mapped_dcpi_inflation_12mo_pct": 3.4296,
       "real_wage_growth_12mo_pct": 0.3581
+    }
+  ],
+  "wgt_comparison_recent": [
+    {
+      "date": "2015-12-01",
+      "wage_quartile": "WQ1",
+      "nominal_wage_growth_12mo_pct": 3.5,
+      "mapped_dcpi_inflation_12mo_pct": 0.7051,
+      "real_wage_growth_12mo_pct": 2.7753
+    },
+    {
+      "date": "2015-12-01",
+      "wage_quartile": "WQ2",
+      "nominal_wage_growth_12mo_pct": 3.1,
+      "mapped_dcpi_inflation_12mo_pct": 0.6198,
+      "real_wage_growth_12mo_pct": 2.4649
+    },
+    {
+      "date": "2015-12-01",
+      "wage_quartile": "WQ3",
+      "nominal_wage_growth_12mo_pct": 3.0,
+      "mapped_dcpi_inflation_12mo_pct": 0.722,
+      "real_wage_growth_12mo_pct": 2.2617
+    },
+    {
+      "date": "2015-12-01",
+      "wage_quartile": "WQ4",
+      "nominal_wage_growth_12mo_pct": 3.2,
+      "mapped_dcpi_inflation_12mo_pct": 1.1065,
+      "real_wage_growth_12mo_pct": 2.0705
+    },
+    {
+      "date": "2016-12-01",
+      "wage_quartile": "WQ1",
+      "nominal_wage_growth_12mo_pct": 4.2,
+      "mapped_dcpi_inflation_12mo_pct": 2.0937,
+      "real_wage_growth_12mo_pct": 2.0631
+    },
+    {
+      "date": "2016-12-01",
+      "wage_quartile": "WQ2",
+      "nominal_wage_growth_12mo_pct": 3.5,
+      "mapped_dcpi_inflation_12mo_pct": 2.1496,
+      "real_wage_growth_12mo_pct": 1.322
+    },
+    {
+      "date": "2016-12-01",
+      "wage_quartile": "WQ3",
+      "nominal_wage_growth_12mo_pct": 3.3,
+      "mapped_dcpi_inflation_12mo_pct": 2.2015,
+      "real_wage_growth_12mo_pct": 1.0749
+    },
+    {
+      "date": "2016-12-01",
+      "wage_quartile": "WQ4",
+      "nominal_wage_growth_12mo_pct": 3.1,
+      "mapped_dcpi_inflation_12mo_pct": 2.2916,
+      "real_wage_growth_12mo_pct": 0.7903
+    },
+    {
+      "date": "2017-12-01",
+      "wage_quartile": "WQ1",
+      "nominal_wage_growth_12mo_pct": 3.7,
+      "mapped_dcpi_inflation_12mo_pct": 2.288,
+      "real_wage_growth_12mo_pct": 1.3804
+    },
+    {
+      "date": "2017-12-01",
+      "wage_quartile": "WQ2",
+      "nominal_wage_growth_12mo_pct": 3.0,
+      "mapped_dcpi_inflation_12mo_pct": 2.3192,
+      "real_wage_growth_12mo_pct": 0.6654
+    },
+    {
+      "date": "2017-12-01",
+      "wage_quartile": "WQ3",
+      "nominal_wage_growth_12mo_pct": 3.1,
+      "mapped_dcpi_inflation_12mo_pct": 2.3116,
+      "real_wage_growth_12mo_pct": 0.7706
+    },
+    {
+      "date": "2017-12-01",
+      "wage_quartile": "WQ4",
+      "nominal_wage_growth_12mo_pct": 3.3,
+      "mapped_dcpi_inflation_12mo_pct": 2.2998,
+      "real_wage_growth_12mo_pct": 0.9777
+    },
+    {
+      "date": "2018-12-01",
+      "wage_quartile": "WQ1",
+      "nominal_wage_growth_12mo_pct": 4.4,
+      "mapped_dcpi_inflation_12mo_pct": 2.0837,
+      "real_wage_growth_12mo_pct": 2.269
+    },
+    {
+      "date": "2018-12-01",
+      "wage_quartile": "WQ2",
+      "nominal_wage_growth_12mo_pct": 3.0,
+      "mapped_dcpi_inflation_12mo_pct": 2.0801,
+      "real_wage_growth_12mo_pct": 0.9011
+    },
+    {
+      "date": "2018-12-01",
+      "wage_quartile": "WQ3",
+      "nominal_wage_growth_12mo_pct": 3.3,
+      "mapped_dcpi_inflation_12mo_pct": 2.1567,
+      "real_wage_growth_12mo_pct": 1.1191
+    },
+    {
+      "date": "2018-12-01",
+      "wage_quartile": "WQ4",
+      "nominal_wage_growth_12mo_pct": 3.0,
+      "mapped_dcpi_inflation_12mo_pct": 2.3038,
+      "real_wage_growth_12mo_pct": 0.6805
+    },
+    {
+      "date": "2019-12-01",
+      "wage_quartile": "WQ1",
+      "nominal_wage_growth_12mo_pct": 4.6,
+      "mapped_dcpi_inflation_12mo_pct": 2.3023,
+      "real_wage_growth_12mo_pct": 2.246
+    },
+    {
+      "date": "2019-12-01",
+      "wage_quartile": "WQ2",
+      "nominal_wage_growth_12mo_pct": 3.5,
+      "mapped_dcpi_inflation_12mo_pct": 2.3746,
+      "real_wage_growth_12mo_pct": 1.0993
+    },
+    {
+      "date": "2019-12-01",
+      "wage_quartile": "WQ3",
+      "nominal_wage_growth_12mo_pct": 3.5,
+      "mapped_dcpi_inflation_12mo_pct": 2.442,
+      "real_wage_growth_12mo_pct": 1.0328
+    },
+    {
+      "date": "2019-12-01",
+      "wage_quartile": "WQ4",
+      "nominal_wage_growth_12mo_pct": 3.0,
+      "mapped_dcpi_inflation_12mo_pct": 2.5056,
+      "real_wage_growth_12mo_pct": 0.4823
+    },
+    {
+      "date": "2020-12-01",
+      "wage_quartile": "WQ1",
+      "nominal_wage_growth_12mo_pct": 4.2,
+      "mapped_dcpi_inflation_12mo_pct": 1.5111,
+      "real_wage_growth_12mo_pct": 2.6488
+    },
+    {
+      "date": "2020-12-01",
+      "wage_quartile": "WQ2",
+      "nominal_wage_growth_12mo_pct": 3.6,
+      "mapped_dcpi_inflation_12mo_pct": 1.4543,
+      "real_wage_growth_12mo_pct": 2.115
+    },
+    {
+      "date": "2020-12-01",
+      "wage_quartile": "WQ3",
+      "nominal_wage_growth_12mo_pct": 3.3,
+      "mapped_dcpi_inflation_12mo_pct": 1.3073,
+      "real_wage_growth_12mo_pct": 1.967
+    },
+    {
+      "date": "2020-12-01",
+      "wage_quartile": "WQ4",
+      "nominal_wage_growth_12mo_pct": 3.3,
+      "mapped_dcpi_inflation_12mo_pct": 1.153,
+      "real_wage_growth_12mo_pct": 2.1225
+    },
+    {
+      "date": "2021-12-01",
+      "wage_quartile": "WQ1",
+      "nominal_wage_growth_12mo_pct": 5.5,
+      "mapped_dcpi_inflation_12mo_pct": 6.2241,
+      "real_wage_growth_12mo_pct": -0.6817
+    },
+    {
+      "date": "2021-12-01",
+      "wage_quartile": "WQ2",
+      "nominal_wage_growth_12mo_pct": 4.1,
+      "mapped_dcpi_inflation_12mo_pct": 6.6721,
+      "real_wage_growth_12mo_pct": -2.4112
+    },
+    {
+      "date": "2021-12-01",
+      "wage_quartile": "WQ3",
+      "nominal_wage_growth_12mo_pct": 3.4,
+      "mapped_dcpi_inflation_12mo_pct": 6.67,
+      "real_wage_growth_12mo_pct": -3.0656
+    },
+    {
+      "date": "2021-12-01",
+      "wage_quartile": "WQ4",
+      "nominal_wage_growth_12mo_pct": 2.8,
+      "mapped_dcpi_inflation_12mo_pct": 6.2423,
+      "real_wage_growth_12mo_pct": -3.24
+    },
+    {
+      "date": "2022-12-01",
+      "wage_quartile": "WQ1",
+      "nominal_wage_growth_12mo_pct": 7.4,
+      "mapped_dcpi_inflation_12mo_pct": 7.2436,
+      "real_wage_growth_12mo_pct": 0.1458
+    },
+    {
+      "date": "2022-12-01",
+      "wage_quartile": "WQ2",
+      "nominal_wage_growth_12mo_pct": 7.2,
+      "mapped_dcpi_inflation_12mo_pct": 7.0924,
+      "real_wage_growth_12mo_pct": 0.1005
+    },
+    {
+      "date": "2022-12-01",
+      "wage_quartile": "WQ3",
+      "nominal_wage_growth_12mo_pct": 5.8,
+      "mapped_dcpi_inflation_12mo_pct": 7.0573,
+      "real_wage_growth_12mo_pct": -1.1744
+    },
+    {
+      "date": "2022-12-01",
+      "wage_quartile": "WQ4",
+      "nominal_wage_growth_12mo_pct": 4.9,
+      "mapped_dcpi_inflation_12mo_pct": 7.0256,
+      "real_wage_growth_12mo_pct": -1.9861
+    },
+    {
+      "date": "2023-12-01",
+      "wage_quartile": "WQ1",
+      "nominal_wage_growth_12mo_pct": 5.9,
+      "mapped_dcpi_inflation_12mo_pct": 4.5342,
+      "real_wage_growth_12mo_pct": 1.3066
+    },
+    {
+      "date": "2023-12-01",
+      "wage_quartile": "WQ2",
+      "nominal_wage_growth_12mo_pct": 5.6,
+      "mapped_dcpi_inflation_12mo_pct": 4.5591,
+      "real_wage_growth_12mo_pct": 0.9955
+    },
+    {
+      "date": "2023-12-01",
+      "wage_quartile": "WQ3",
+      "nominal_wage_growth_12mo_pct": 5.6,
+      "mapped_dcpi_inflation_12mo_pct": 4.8103,
+      "real_wage_growth_12mo_pct": 0.7535
+    },
+    {
+      "date": "2023-12-01",
+      "wage_quartile": "WQ4",
+      "nominal_wage_growth_12mo_pct": 5.2,
+      "mapped_dcpi_inflation_12mo_pct": 5.2271,
+      "real_wage_growth_12mo_pct": -0.0258
+    },
+    {
+      "date": "2024-12-01",
+      "wage_quartile": "WQ1",
+      "nominal_wage_growth_12mo_pct": 4.3,
+      "mapped_dcpi_inflation_12mo_pct": 3.0691,
+      "real_wage_growth_12mo_pct": 1.1942
+    },
+    {
+      "date": "2024-12-01",
+      "wage_quartile": "WQ2",
+      "nominal_wage_growth_12mo_pct": 4.8,
+      "mapped_dcpi_inflation_12mo_pct": 3.0393,
+      "real_wage_growth_12mo_pct": 1.7088
+    },
+    {
+      "date": "2024-12-01",
+      "wage_quartile": "WQ3",
+      "nominal_wage_growth_12mo_pct": 4.6,
+      "mapped_dcpi_inflation_12mo_pct": 3.1151,
+      "real_wage_growth_12mo_pct": 1.4401
+    },
+    {
+      "date": "2024-12-01",
+      "wage_quartile": "WQ4",
+      "nominal_wage_growth_12mo_pct": 5.0,
+      "mapped_dcpi_inflation_12mo_pct": 3.2998,
+      "real_wage_growth_12mo_pct": 1.6459
     }
   ],
   "drivers": [
